@@ -1,2 +1,9 @@
-@import './common';
-@import './example';
+//utils
+@import './utils/_variables';
+@import './utils/_common';
+//components
+@import './components/_container';
+@import './components/_common-styles';
+
+//base
+@import './base/_products';
