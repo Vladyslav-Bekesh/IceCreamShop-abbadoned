@@ -1,9 +1,8 @@
 //utils
-@import './utils/_variables';
-@import './utils/_common';
+@import './utils/_main';
+
 //components
-@import './components/_container';
-@import './components/_common-styles';
+@import './components/_main';
 
 //base
-@import './base/_products';
+@import './base/_main';
