@@ -1,4 +1,6 @@
-
+body{
+  font-family: "Montserrat", sans-serif;
+}
 a {
   text-decoration: none;
   color: black;
@@ -29,7 +31,7 @@ p {
 }
 .background-color{
   margin: 0 auto;
-  background-color: #84A178;
+  background-color: var(--background-color);
   width: 100%;
     @media screen and (min-width: 480px) {
       width: 481px;
