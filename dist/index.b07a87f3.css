@@ -206,4 +206,18 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.products {
+  margin: 0 auto;
+  padding-top: 60px;
+  display: block;
+}
+
+.products__lable {
+  color: #131311;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 800;
+  display: block;
+}
+
 /*# sourceMappingURL=index.b07a87f3.css.map */
