@@ -206,4 +206,33 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.logo {
+  width: 40px;
+  height: 37px;
+}
+
+@media screen and (min-width: 900px) {
+  .logo {
+    width: 60px;
+    height: 65px;
+  }
+}
+
+.menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  padding: 12px 20px 64px 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.button-close {
+  height: 32px;
+  background-color: #0000;
+  border-color: #0000;
+}
+
 /*# sourceMappingURL=index.b07a87f3.css.map */
