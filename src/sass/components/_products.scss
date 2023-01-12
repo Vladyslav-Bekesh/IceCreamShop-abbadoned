@@ -1,0 +1,31 @@
+.products{
+    width:100%;
+padding: 60px 0;
+
+&__lable{
+display: block;    
+font-style: 800;
+font-size: 18px;
+line-height: 1.22;
+margin:0 auto;
+margin-bottom:12px;
+text-align: center;
+color:#131313;
+}
+
+&__title{
+    font-family: Seymour One;
+    font-style: 800;
+    font-size: 30px;
+    line-height: 1.27;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #131313;
+    
+}
+
+
+
+
+}
