@@ -118,6 +118,7 @@ summary {
   --main-text-color: #fcfcfc;
   --secondary-text-color: #131313;
   --accent-color: #f8d24e;
+  --buttons-bgc: #0a8817;
 }
 
 ul {
@@ -149,11 +150,9 @@ img {
 body {
   background-color: var(--main-background-color);
   color: var(--main-text-color);
+  max-width: 1600px;
+  margin: 0 auto;
   font-family: Montserrat, sans-serif;
-}
-
-.button {
-  display: inline-flex;
 }
 
 .container {
@@ -183,7 +182,77 @@ body {
 }
 
 .section {
-  padding: 63px 0;
+  padding: 60px 0;
+}
+
+.pretty-button {
+  color: #000;
+  text-align: center;
+  border-radius: 10px;
+  align-items: center;
+  padding: 12px 34px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28571;
+  display: flex;
+}
+
+.pretty-button--fill {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.pretty-button--fill:hover {
+  background-color: var(--buttons-bgc);
+}
+
+.pretty-button--fill:focus {
+  background-color: var(--buttons-bgc);
+  color: #fff;
+}
+
+.pretty-button--empty {
+  border: 2px solid;
+  border-color: var(--accent-color);
+  background-color: #0000;
+}
+
+.pretty-button--empty:hover {
+  border-color: var(--buttons-bgc);
+}
+
+.pretty-button--empty:focus {
+  border-color: var(--buttons-bgc);
+  color: #fff;
+}
+
+.not-pretty-button {
+  text-align: center;
+  color: var(--accent-color);
+  background-color: #0000;
+  border: none;
+  align-items: center;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration-line: underline;
+  display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .not-pretty-button {
+    font-size: 14px;
+    line-height: 1.21429;
+  }
+}
+
+.not-pretty-button:hover {
+  color: var(--buttons-bgc);
+}
+
+.not-pretty-button:focus {
+  color: #fff;
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */
