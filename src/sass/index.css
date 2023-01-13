@@ -1,0 +1,127 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --background-color:#84A178;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.background-color {
+  margin: 0 auto;
+  background-color: var(--background-color);
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .background-color {
+    width: 481px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .background-color {
+    width: 769px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .background-color {
+    width: 1201px;
+  }
+}
+
+.container {
+  padding: 0 21px;
+  width: 100%;
+  background-color: #84A178;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding: 0 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 29px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0 16px;
+  }
+}
+
+.section {
+  padding: 63px 0;
+}
+@media screen and (min-width: 480px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+
+.products {
+  display: block;
+}
+.products__lable {
+  display: flex;
+  font-size: 18px;
+  color: #131311;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.products__title {
+  display: block;
+  font-size: 30px;
+}
+.products__text {
+  font-size: 14px;
+}
+.products__item {
+  display: block;
+  margin: 0 auto;
+}
+.products__card-coffee {
+  display: block;
+  text-align: end;
+  width: 280px;
+  height: 420px;
+  background-color: #AEC6A5;
+  border-radius: 24px;
+}
+
+.button-arrow {
+  background-color: transparent;
+}/*# sourceMappingURL=index.css.map */

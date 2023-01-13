@@ -1,20 +1,53 @@
 .products{
-  padding-top: 60px;
-  display: block;
-  margin: 0 auto;
-  
+
+    display: block;
+    
+     
+ 
   &__lable{
-   display: block;
-  font-weight: 800;
+   display: flex;
   font-size:18px; 
   color: #131311;
-  margin:0 auto ;
-
-
+  align-items: center;
+  justify-content: center;
+  margin-bottom:12px ;
 
   }
   
+  &__title{
+
+      display: block;
+      font-size:30px;
+     
+
+      }
+
+  &__text{
+    font-size: 14px;
+  }
+
+  &__item{
+
+    display: block;
+    margin: 0 auto;
+  }
 
 
+  &__card-coffee {
+    display: block;
+   text-align: end;
+   width:280px;
+   height: 420px;
+   background-color:#AEC6A5 ;
+   border-radius: 24px;
 
+   
+  }
+
+ 
+}
+
+
+.button-arrow{
+  background-color:transparent ;
 }

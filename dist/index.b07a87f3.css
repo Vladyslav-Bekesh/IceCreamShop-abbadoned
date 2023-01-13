@@ -207,17 +207,43 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .products {
-  margin: 0 auto;
-  padding-top: 60px;
   display: block;
 }
 
 .products__lable {
   color: #131311;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
   font-size: 18px;
-  font-weight: 800;
+  display: flex;
+}
+
+.products__title {
+  font-size: 30px;
   display: block;
+}
+
+.products__text {
+  font-size: 14px;
+}
+
+.products__item {
+  margin: 0 auto;
+  display: block;
+}
+
+.products__card-coffee {
+  text-align: end;
+  width: 280px;
+  height: 420px;
+  background-color: #aec6a5;
+  border-radius: 24px;
+  display: block;
+}
+
+.button-arrow {
+  background-color: #0000;
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */
