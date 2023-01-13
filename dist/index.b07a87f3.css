@@ -114,18 +114,10 @@ summary {
 }
 
 :root {
-  --background-color: #84a178;
-}
-
-body {
-  font-family: Montserrat, sans-serif;
-}
-
-a {
-  color: #000;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+  --main-background-color: #84a178;
+  --main-text-color: #fcfcfc;
+  --secondary-text-color: #131313;
+  --accent-color: #f8d24e;
 }
 
 ul {
@@ -134,58 +126,52 @@ ul {
   list-style: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
-.background-color {
-  background-color: var(--background-color);
-  width: 100%;
-  margin: 0 auto;
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  font-family: Montserrat, sans-serif;
 }
 
-@media screen and (min-width: 480px) {
-  .background-color {
-    width: 481px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .background-color {
-    width: 769px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .background-color {
-    width: 1201px;
-  }
+.button {
+  display: inline-flex;
 }
 
 .container {
   width: 100%;
-  background-color: #84a178;
   margin: 0 auto;
-  padding: 0 21px;
+  padding: 0 20px;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    padding: 0 100px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding: 0 29px;
+    padding: 0 32px;
   }
 }
 
@@ -198,12 +184,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .section {
   padding: 63px 0;
-}
-
-@media screen and (min-width: 480px) {
-  .section {
-    padding: 60px 0;
-  }
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */
