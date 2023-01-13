@@ -1,0 +1,75 @@
+.advantages {
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.advantages__list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  flex-direction: column;
+  padding: 50px 45px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 616px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1168px;
+    padding: 94px 15px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+.advantages__item {
+  width: 230px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 152px;
+    gap: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    gap: 32px;
+  }
+}
+
+.advantages__img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  // padding: 25px 0;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  background-color: var(--accent-color);
+  fill: black;
+}
+
+.advantages__name {
+  color: var(--main-text-color);
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.advantages__descript {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
