@@ -8,6 +8,10 @@
     flex-direction: row;
     margin-bottom: 40px;
   }
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+    margin-bottom: 60px;
+  }
 }
 
 .grid__item {
@@ -23,10 +27,13 @@
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 32px) / 3);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 40px;
   }
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 40px;
+  @media screen and (min-width: 1200px) {
+    padding: 50px;
+  }
 }
 
 .contacts__representation {
@@ -61,6 +68,9 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 64px;
     padding-right: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 50px;
   }
 
   &--street {
@@ -122,6 +132,9 @@
   }
   &--margin {
     margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 12px;
+    }
   }
 }
 
@@ -132,6 +145,10 @@
   line-height: 1.6;
 
   color: var(--secondary-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
   &--tel {
     margin-bottom: 6px;
     @media screen and (min-width: 768px) {
