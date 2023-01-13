@@ -1,22 +1,21 @@
 //pretty buttons
 
-.pretty-button{
+.pretty-button {
   padding: 12px 34px;
   border-radius: 10px;
 
   //txt props
   font-weight: 600;
   font-size: 14px;
-  line-height: calc(18/14);
+  line-height: calc(18 / 14);
   color: #000;
 
   display: flex;
   align-items: center;
   text-align: center;
-
 }
 
-.pretty-button--fill{
+.pretty-button--fill {
   border: none;
 
   background-color: var(--accent-color);
@@ -30,10 +29,10 @@
   }
 }
 
-.pretty-button--empty{
-  border:solid 2px;
+.pretty-button--empty {
+  border: solid 2px;
   border-color: var(--accent-color);
-  background-color: rgba(0,0,0,0.0);
+  background-color: rgba(0, 0, 0, 0);
 
   &:hover {
     border-color: var(--buttons-bgc);
@@ -45,28 +44,25 @@
   }
 }
 
-
 //not pretty buttons
 
-.not-pretty-button{
+.not-pretty-button {
   padding: 0 0;
   display: flex;
   align-items: center;
   text-align: center;
-  
+
   color: var(--accent-color);
   border: none;
   font-weight: 600;
   font-size: 12px;
-  line-height: calc(15/12);
+  line-height: calc(15 / 12);
   text-decoration-line: underline;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 
-
-  
   @media screen and (min-width: 1200px) {
-  font-size: 14px;
-  line-height: calc(17/14);
+    font-size: 14px;
+    line-height: calc(17 / 14);
   }
 
   &:hover {
