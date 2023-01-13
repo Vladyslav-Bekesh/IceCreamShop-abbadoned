@@ -206,4 +206,67 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.products {
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .products {
+    display: flex;
+  }
+}
+
+.products__lable {
+  color: #131311;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 18px;
+  display: flex;
+}
+
+.products__title {
+  text-align: center;
+  font-size: 30px;
+  display: block;
+}
+
+.products__text {
+  font-size: 14px;
+}
+
+.products__item {
+  width: 100%;
+  flex-direction: column;
+  margin-top: 168px;
+  display: flex;
+}
+
+.products__card-icecream {
+  text-align: center;
+  width: 280px;
+  height: 420px;
+  background-color: #aec6a5;
+  border-radius: 24px;
+  display: block;
+}
+
+.products__card-milkshakes {
+  text-align: center;
+  width: 280px;
+  height: 420px;
+  background-color: #efd478;
+  border-radius: 24px;
+  display: block;
+}
+
+.products__card-icecoffee {
+  width: 280px;
+  height: 420px;
+  text-align: center;
+  background-color: #d6936d;
+  border-radius: 24px;
+  display: block;
+}
+
 /*# sourceMappingURL=index.b07a87f3.css.map */

@@ -1,11 +1,18 @@
 .products{
-
     display: block;
+
+    @media screen  and (min-width:1200px){
+      display: flex;
+
+
+
+      
+    }
     
      
  
   &__lable{
-   display: flex;
+  display: flex;
   font-size:18px; 
   color: #131311;
   align-items: center;
@@ -17,9 +24,9 @@
   &__title{
 
       display: block;
+      text-align: center;
       font-size:30px;
      
-
       }
 
   &__text{
@@ -28,14 +35,17 @@
 
   &__item{
 
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width:100% ;
+      margin-top:168px ;
   }
+   
+  
 
-
-  &__card-coffee {
+  &__card-icecream {
     display: block;
-   text-align: end;
+   text-align: center;
    width:280px;
    height: 420px;
    background-color:#AEC6A5 ;
@@ -44,10 +54,27 @@
    
   }
 
+  &__card-milkshakes{
+    display: block;
+    text-align: center;
+    width: 280px;
+    height:420px ;
+    background-color:#EFD478 ;
+    border-radius: 24px;
+    
+
+  }
  
+  &__card-icecoffee{
+    display: block;
+    width:280px ;
+    height:420px ;
+    text-align: center;
+    background-color:#D6936D ;
+    border-radius:24px ;
+  }
+
+
 }
 
 
-.button-arrow{
-  background-color:transparent ;
-}
