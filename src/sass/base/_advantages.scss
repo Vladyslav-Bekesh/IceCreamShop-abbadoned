@@ -53,6 +53,14 @@
   height: 50px;
   border-radius: 50%;
   background-color: var(--accent-color);
+  transition-property: box-shadow, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.733);
+    transform: rotate(1turn);
+  }
 }
 
 .advantages__name {
