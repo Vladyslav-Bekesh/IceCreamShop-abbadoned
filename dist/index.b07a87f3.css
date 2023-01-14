@@ -465,9 +465,27 @@ body {
   border: #0000;
 }
 
+.btn--location:hover, .btn--location:focus {
+  background-color: var(--buttons-bgc);
+}
+
+.btn--location:focus {
+  color: var(--main-text-color);
+  fill: var(--main-text-color);
+}
+
 .btn--franchise {
   border-color: var(--accent-color);
   background-color: #0000;
+}
+
+.btn--franchise:hover, .btn--franchise:focus {
+  border-color: var(--buttons-bgc);
+}
+
+.btn--franchise:focus {
+  color: var(--main-text-color);
+  fill: var(--main-text-color);
 }
 
 .button-container {
@@ -482,6 +500,10 @@ body {
     flex-direction: row;
     justify-content: center;
   }
+}
+
+.button-icon {
+  margin-left: 4px;
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */

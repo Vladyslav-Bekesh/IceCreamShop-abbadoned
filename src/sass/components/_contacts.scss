@@ -179,10 +179,26 @@
   &--location {
     background-color: var(--accent-color);
     border: transparent;
+    &:hover,
+    &:focus {
+      background-color: var(--buttons-bgc);
+    }
+    &:focus {
+      color: var(--main-text-color);
+      fill: var(--main-text-color);
+    }
   }
   &--franchise {
     border-color: var(--accent-color);
     background-color: transparent;
+    &:hover,
+    &:focus {
+      border-color: var(--buttons-bgc);
+    }
+    &:focus {
+      color: var(--main-text-color);
+      fill: var(--main-text-color);
+    }
   }
 }
 
@@ -196,4 +212,8 @@
     flex-direction: row;
     justify-content: center;
   }
+}
+
+.button-icon {
+  margin-left: 4px;
 }
