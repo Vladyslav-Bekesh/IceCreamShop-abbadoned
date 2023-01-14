@@ -256,4 +256,215 @@ body {
   color: #fff;
 }
 
+.modal-buy-now {
+  border: 2px solid var(--accent-color);
+  width: 320px;
+  height: 100%;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+}
+
+.buy-now-form {
+  width: 100%;
+  height: 100%;
+  padding: 28px;
+  position: relative;
+}
+
+.buy-now-form-title {
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: Seymour One;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+}
+
+.button-closed {
+  cursor: pointer;
+  background-color: #0000;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.modal-buy-now__list {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 32px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.modal-buy-now__item {
+  width: 132px;
+  height: 199px;
+  margin-bottom: 20px;
+}
+
+.modal-buy-now__item:last-child {
+  margin-bottom: 0;
+}
+
+.modal-buy-now__item:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.modal-buy-now__item {
+  position: relative;
+}
+
+.modal-buy-now__wrap {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  margin-top: 7px;
+}
+
+.modal-buy-now__wrap.modal-buy-now__wrap--green {
+  background: linear-gradient(0deg, #9cbe8fb3, #9cbe8fb3), #d9d9d9;
+  box-shadow: 0 5.26027px 19.726px #0a881740;
+}
+
+.modal-buy-now__wrap.modal-buy-now__wrap--yellow {
+  background: linear-gradient(0deg, #f8d24eb3, #f8d24eb3), #d9d9d9;
+  box-shadow: 0 5.26027px 19.726px #99721740;
+}
+
+.modal-buy-now__wrap.modal-buy-now__wrap--brown {
+  background: linear-gradient(0deg, #d5753fb3, #d5753fb3), #d9d9d9;
+  box-shadow: 0 5.26027px 19.726px #00000040;
+}
+
+.modal-buy-now__icon {
+  width: 132px;
+  height: 132px;
+  z-index: 1;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  bottom: 7px;
+}
+
+.modal-buy-now__text {
+  width: 100%;
+  height: 136px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  border-radius: 15px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.modal-buy-now__text.modal-buy-now__text--green {
+  filter: drop-shadow(0 5.26027px 19.726px #d414431a);
+  background: none;
+  border: 2px solid #96af8c;
+  padding: 96px 16px 20px;
+}
+
+.modal-buy-now__text.modal-buy-now__text--yellow {
+  background: #efd478;
+  border: 2px solid #efd478;
+  padding: 96px 13px 20px;
+  box-shadow: 0 5.26027px 19.726px #d414431a;
+}
+
+.modal-buy-now__text.modal-buy-now__text--brown {
+  filter: drop-shadow(0 5.26027px 19.726px #d414431a);
+  background: none;
+  border: 2px solid #d6936d;
+  padding: 95px 13px 20px;
+}
+
+.buy-now-box {
+  flex-direction: column;
+  display: flex;
+}
+
+.buy-now-box__item {
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 12px;
+  display: flex;
+  position: relative;
+}
+
+.buy-now-box__item__comment {
+  margin-bottom: 26px;
+}
+
+.buy-now-box__input {
+  width: 100% px;
+  height: 32px;
+  background: #f8d24e1a;
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  margin: 0;
+  padding: 8px 12px;
+}
+
+.buy-now-box__input::placeholder {
+  color: var(--secondary-text-color);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.42;
+}
+
+.buy-now-box__input--text {
+  width: 100%;
+  height: 65px;
+  resize: none;
+  background: #f8d24e1a;
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  margin: 0;
+  padding: 8px 12px;
+}
+
+.buy-now-box__input--text::placeholder {
+  color: var(--secondary-text-color);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.42;
+}
+
+.forma-modal__button {
+  min-width: 114px;
+  height: 42px;
+  background: #f8d24e;
+  border: none;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 34px;
+  display: flex;
+}
+
+.forma-modal__button--text {
+  color: var(--secondary-text-color);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
 /*# sourceMappingURL=index.b07a87f3.css.map */

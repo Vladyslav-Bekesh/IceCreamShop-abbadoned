@@ -1,10 +1,65 @@
 <div class="modal-buy-now">
-  <img src="#" alt="" class="modal-buy-now__img">
+  <!-- <img src="#" alt="" class="modal-buy-now__img"> -->
+  <form class="buy-now-form" name="form">
+    <button type="button" class="button-closed">
+      <svg class="button-closed__icon" width="20px" height="20px">
+        <use href="./images/symbol-defs.svg#close">
+        </use>
+        </svg>
+    </button>
+    <p class="buy-now-form__title">Buy now</p>
+  
   <ul class="modal-buy-now__list">
-    <li class="modal-buy-now__item"></li>
-    <li class="modal-buy-now__item"></li>
-    <li class="modal-buy-now__item"></li>
-    <li class="modal-buy-now__item"></li>
-    <li class="modal-buy-now__item"></li>
+    <li class="modal-buy-now__item">
+      <div class="modal-buy-now__wrap modal-buy-now__wrap--green">
+        <picture>
+            <source 
+            srcset="./images/modal-buy-now/kelsey-curtis-modal-mob.jpg 1x, ./images/modal-buy-now/kelsey-curtis-modal-mob-2x.jpg 2x" 
+            media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px 33vw">
+        <img src="./images/modal-buy-now/kelsey-curtis-modal-mob.jpg" class="modal-buy-now__icon" alt="морозиво">
+        </picture>
+    </div>
+        <p class="modal-buy-now__text modal-buy-now__text--green">ice cream</p>
+    </li>
+    <li class="modal-buy-now__item">
+      <div class="modal-buy-now__wrap modal-buy-now__wrap--yellow">
+        <picture>
+            <source 
+            srcset="./images/modal-buy-now/pariwat-pannium-modal-mob.jpg 1x, ./images/modal-buy-now/pariwat-pannium-modal-mob-2x.jpg 2x" 
+            media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px 33vw">
+        <img src="./images/modal-buy-now/pariwat-pannium-modal-mob.jpg" class="modal-buy-now__icon" alt="морозиво">
+        </picture>
+    </div>
+        <p class="modal-buy-now__text modal-buy-now__text--yellow">ice coffee</p>
+    </li>
+    <li class="modal-buy-now__item">
+      <div class="modal-buy-now__wrap modal-buy-now__wrap--brown">
+        <picture>
+            <source 
+            srcset="./images/modal-buy-now/victor-rutka-modal-mob.jpg 1x, ./images/modal-buy-now/victor-rutka-modal-mob-2x.jpg 2x" 
+            media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px 33vw">
+        <img src="./images/modal-buy-now/victor-rutka-modal-mob.jpg" class="modal-buy-now__icon" alt="морозиво">
+        </picture>
+    </div>
+        <p class="modal-buy-now__text modal-buy-now__text--brown">milkshake</p>
+    </li>
   </ul>
+  <div class="buy-now-box">
+    <div class="buy-now-box__item">
+      <label for="name"></label>
+    <input type="text" class="buy-now-box__input" name="name" id="name" placeholder="Name">
+    </div>
+    <div class="buy-now-box__item">
+      <label for="phone"></label>
+      <input type="text" class="buy-now-box__input" name="phone" id="phone" placeholder="Phone">
+    </div>
+    <div class="buy-now-box__item buy-now-box__item--comment">
+    <label for="comment"></label>
+    <textarea class="buy-now-box__input buy-now-box__input--text" name="comment" id="comment" placeholder="Comment"></textarea>
+    </div>
+    <button class="button forma-modal__button" type="submit">
+      <span class="forma-modal__button--text">Submit</span>
+  </button>
+  </div>
+</form>
 </div>
