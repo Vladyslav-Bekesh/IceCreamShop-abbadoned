@@ -38,12 +38,14 @@
     <h1 class="about__title">how it`s made?</h1>
   </div>
   <div class="about__set">
-    <picture class="about__img">
-      <source srcset="/cow-desctop.b7bf6b1a.jpg    1x, /cow-desctop-x2.5a9c53e3.jpg 2x" media="(min-width:1200px)">
-      <source srcset="/cow-tablet.e41950a3.jpg    1x, /cow-tablet-x2.a3118685.jpg 2x" media="(min-width:768px)">
-      <source srcset="/cow-mobile.93b94e19.jpg    1x, /cow-mobile-x2.bb84d8b4.jpg 2x" media="(min-width:480px)">
-      <img srcset="/cow-mobile.93b94e19.jpg    1x, /cow-mobile-x2.bb84d8b4.jpg 2x" src="/cow-mobile.93b94e19.jpg" alt="Cow on grass" class="about__photo" width="279">
-    </picture>
+    <div class="about__wrap">
+      <picture class="about__img">
+        <source srcset="/cow-desctop.b7bf6b1a.jpg    1x, /cow-desctop-x2.5a9c53e3.jpg 2x" media="(min-width:1200px)">
+        <source srcset="/cow-tablet.e41950a3.jpg    1x, /cow-tablet-x2.a3118685.jpg 2x" media="(min-width:768px)">
+        <source srcset="/cow-mobile.93b94e19.jpg    1x, /cow-mobile-x2.bb84d8b4.jpg 2x" media="(min-width:480px)">
+        <img srcset="/cow-mobile.93b94e19.jpg    1x, /cow-mobile-x2.bb84d8b4.jpg 2x" src="/cow-mobile.93b94e19.jpg" alt="Cow on grass" class="about__photo" width="279">
+      </picture>
+    </div>
     <div class="about__block">
       <ul class="about__list">
         <li class="about__part">
@@ -57,21 +59,27 @@
           three years. Sweets lovers can expect 55 types of ice cream, 15 types
           of coffee and 23 milkshakes.
         </li>
+        <li class="about__part about--bigscreen">
+          This is enough to choose ice cream and coffee for any mood!
+        </li>
       </ul>
-      <button type="button" class="pretty-button pretty-button--fill button-about" data-modal-open="">
+      <button type="button" class="pretty-button pretty-button--fill button--about" data-modal-open="">
         Read more
+        <svg width="12" height="12">
+          <use href="/symbol-defs.a8b2e413.svg#about-arrow"></use>
+        </svg>
       </button>
     </div>
   </div>
 </div>
 
-        <div class="container advantages">
+        <div class="container">
   <h2 class="is-hidden">Our advantages</h2>
   <ul class="advantages__list">
     <li class="advantages__item">
       <span class="advantages__img">
         <svg width="36px" height="36px">
-          <use href="/symbol-defs.a8b2e413.svg#icon-cow"></use>
+          <use href="/symbol-defs.a8b2e413.svg#cow"></use>
         </svg>
       </span>
       <h3 class="advantages__name">721</h3>
@@ -82,18 +90,18 @@
     <li class="advantages__item">
       <span class="advantages__img">
         <svg width="36px" height="36px">
-          <use href="/symbol-defs.a8b2e413.svg#icon-ice-cream"></use>
+          <use href="/symbol-defs.a8b2e413.svg#ice-cream"></use>
         </svg>
       </span>
-      <h3 class="advantages__name">16 kg</h3>
+      <h3 class="advantages__name">16kg</h3>
       <p class="advantages__descript">
-        Aliquam ac dui vel dui vulputate consectetur.сг Mauris massa.
+        Aliquam ac dui vel dui vulputate  consectetur.сг Mauris massa.
       </p>
     </li>
     <li class="advantages__item">
       <span class="advantages__img">
         <svg width="36px" height="36px">
-          <use href="/symbol-defs.a8b2e413.svg#icon-weight"></use>
+          <use href="/symbol-defs.a8b2e413.svg#weight"></use>
         </svg>
       </span>
       <h3 class="advantages__name">84</h3>
