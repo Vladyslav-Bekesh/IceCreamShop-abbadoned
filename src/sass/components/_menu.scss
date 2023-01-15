@@ -1,5 +1,5 @@
 .menu {
-    
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -10,6 +10,10 @@
     height: 100vh;
 
     text-align: center;
+
+    @media screen and (min-width:1200px) {
+        display: none;
+    }
 }
 
 .menu-list {
@@ -17,7 +21,7 @@
 }
 
 .button-close {
-    height: 32px;
+    
 
     background-color: transparent;
     border-color: transparent;
@@ -29,15 +33,32 @@
     }
 }
 
+.menu-list__link {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.21;
+
+    color: #FCFCFC;
+}
+
 .menu-list__link:hover,
 .menu-list__link:focus {
-    color: white;
+    color: #131313;
 }
 
 .menu-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
     height: 100%;
+}
+
+.close-icon {
+    fill: #FCFCFC;
+}
+
+.button-close:hover .close-icon {
+    fill: #131313;
 }

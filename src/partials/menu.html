@@ -1,21 +1,41 @@
 <div class="menu container">
-    <img class="logo" src="./images/Logo.png" alt="Лого компанії" >
-    <button class="button-close">
-        <svg  width="32" height="32">
-            <use href="./images/symbol-defs.svg#weight"></use>
-        </svg>
-    </button>
-    <div class="menu-content">
-        <div>
-            <ul class="menu-list">
-                <li class="menu-list__item"><a class="menu-list__link href="">Home</a></li>  
-                <li class="menu-list__item"><a class="menu-list__link href="">How it’s made?</a></li>   
-                <li class="menu-list__item"><a class="menu-list__link href="">Our products</a></li>   
-                <li class="menu-list__item"><a class="menu-list__link href="">Contact</a></li> 
-            </ul>
-        </div>
-        <div>
-            <button type="button">Buy now<span>&gt;</span></button>
-        </div>
+  <picture>
+    <source
+      srcset="./images/Logo.png 1x, ./images/logo-desktop-2x.png 2x"
+      media="(min-width:1200px)"
+    />
+    <source
+      srcset="./images/logo-tablet-1x.png 1x, ./images/logo-tablet-2x.png 2x"
+      media="(min-width:480px)"
+    />
+    <source srcset="./images/logo-mob-1x.png 1x, ./images/logo-mob-2x.png 2x" />
+    <img
+      class="logo"
+      srcset="./images/logo-desktop-2x.png 2x"
+      src="./images/Logo.png"
+      alt="Лого компанії"
+    />
+  </picture>
+  <button class="button-close">
+    <svg class="close-icon" width="32" height="32">
+      <use href="./images/symbol-defs.svg#close"></use>
+    </svg>
+  </button>
+  <div class="menu-content">
+    <nav>
+      <div>
+        <ul class="menu-list">
+          <li class="menu-list__item"><a class="menu-list__link href=">Home</a></li>
+          <li class="menu-list__item"><a class="menu-list__link href=">How it’s made?</a></li>
+          <li class="menu-list__item"><a class="menu-list__link href=">Our products</a></li>
+          <li class="menu-list__item"><a class="menu-list__link href=">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <button class="pretty-button--fill pretty-button" type="button">
+        Buy now<span>&gt;</span>
+      </button>
     </div>
+  </div>
 </div>

@@ -16,31 +16,65 @@
 
     <!-- ELEMENTS -->
     <header class="header background-color">
-  <div class="container">
-    <img class="logo" src="/Logo.cc3eb18d.png" alt="Лого компанії" width="60">
-    <ul>
-      <li><a href="">Home</a></li>  <!-- color: #FCFCFC;  color hover: #F8D24E; -->
-      <li><a href="">How it’s made?</a></li>   
-      <li><a href="">Our products</a></li>   
-      <li><a href="">Contact</a></li> 
-    </ul>
-      <button type="button">Buy now<span>&gt;</span></button>  <!--bcg-color: F8D24E; bcg-hover:0A8817; color:FFFFFF-->
+  <div class="container container--flex">
+    <picture>
+      <source srcset="/Logo.cc3eb18d.png 1x, /logo-desktop-2x.dbeaffff.png 2x" media="(min-width:1200px)">
+      <source srcset="/logo-tablet-1x.3ffe0b00.png 1x, /logo-tablet-2x.cfbfce71.png 2x" media="(min-width:480px)">
+      <source srcset="/logo-mob-1x.7d71f90c.png 1x, /logo-mob-2x.4c143730.png 2x">
+      <img class="logo" srcset="/logo-desktop-2x.dbeaffff.png 2x" src="/Logo.cc3eb18d.png" alt="Лого компанії" width="60">
+    </picture>
+    <button class="button-menu" type="button">
+      <svg class="icon-menu" width="32" height="32">
+        <use href="/symbol-defs.a8b2e413.svg#menu-button"></use>
+      </svg>
+    </button>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="navigation__link" href="">Home</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="">How it’s made?</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="">Our products</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container--padding">
+      <button class="pretty-button pretty-button--fill header-button" type="button">
+        Buy now<span>&gt;</span>
+      </button>
+    </div>
   </div>
 </header>
-    <div class="menu">
-    <img class="logo" src="/Logo.cc3eb18d.png" alt="Лого компанії">
-    <button class="button-close">
-        <svg width="32" height="32">
-            <use href="/symbol-defs.a8b2e413.svg#telegram"></use>
-        </svg>
-    </button>
-    <ul>
-        <li><a href="">Home</a></li>  
-        <li><a href="">How it’s made?</a></li>   
-        <li><a href="">Our products</a></li>   
-        <li><a href="">Contact</a></li> 
-      </ul>
+
+    <div class="menu container">
+  <picture>
+    <source srcset="/Logo.cc3eb18d.png 1x, /logo-desktop-2x.dbeaffff.png 2x" media="(min-width:1200px)">
+    <source srcset="/logo-tablet-1x.3ffe0b00.png 1x, /logo-tablet-2x.cfbfce71.png 2x" media="(min-width:480px)">
+    <source srcset="/logo-mob-1x.7d71f90c.png 1x, /logo-mob-2x.4c143730.png 2x">
+    <img class="logo" srcset="/logo-desktop-2x.dbeaffff.png 2x" src="/Logo.cc3eb18d.png" alt="Лого компанії">
+  </picture>
+  <button class="button-close">
+    <svg class="close-icon" width="32" height="32">
+      <use href="/symbol-defs.a8b2e413.svg#close"></use>
+    </svg>
+  </button>
+  <div class="menu-content">
+    <nav>
+      <div>
+        <ul class="menu-list">
+          <li class="menu-list__item"><a class="menu-list__link href=">Home</a></li>
+          <li class="menu-list__item"><a class="menu-list__link href=">How it’s made?</a></li>
+          <li class="menu-list__item"><a class="menu-list__link href=">Our products</a></li>
+          <li class="menu-list__item"><a class="menu-list__link href=">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <button class="pretty-button--fill pretty-button" type="button">
+        Buy now<span>&gt;</span>
+      </button>
+    </div>
+  </div>
 </div>
+
     <main>
       <section class="background-color">
   <div class="container">
@@ -81,7 +115,7 @@
     
   </div>
 </footer>
-    
+
     <!-- MODALS -->
     <div class="modal-buy-now">
   <img src="#" alt="" class="modal-buy-now__img">
