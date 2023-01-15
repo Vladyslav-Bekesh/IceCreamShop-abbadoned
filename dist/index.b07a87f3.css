@@ -288,12 +288,8 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
 }
 
-.socials-icon:hover .socials-icon__link, .socials-icon:focus .socials-icon__link {
+.socials-icon:hover .socials-icon__link, .socials-icon:focus .socials-icon__link, .socials-icon__link {
   fill: #fcfcfc;
-}
-
-.socials-icon__link {
-  fill: #f8d24e;
 }
 
 @media screen and (min-device-width: 768px), screen and (min-width: 768px) {
