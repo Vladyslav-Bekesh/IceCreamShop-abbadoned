@@ -445,47 +445,14 @@ body {
   }
 }
 
-.btn {
+.pretty-button--contacts {
   min-width: 196px;
   cursor: pointer;
-  color: var(--secondary-text-color);
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.29;
-  display: inline-flex;
+  outline: none;
 }
 
-.btn--location {
-  background-color: var(--accent-color);
-  border: #0000;
-}
-
-.btn--location:hover, .btn--location:focus {
-  background-color: var(--buttons-bgc);
-}
-
-.btn--location:focus {
-  color: var(--main-text-color);
-  fill: var(--main-text-color);
-}
-
-.btn--franchise {
-  border-color: var(--accent-color);
-  background-color: #0000;
-}
-
-.btn--franchise:hover, .btn--franchise:focus {
-  border-color: var(--buttons-bgc);
-}
-
-.btn--franchise:focus {
-  color: var(--main-text-color);
-  fill: var(--main-text-color);
+.pretty-button--contacts:focus {
+  fill: #fff;
 }
 
 .button-container {
