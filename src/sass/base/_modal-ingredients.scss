@@ -1,0 +1,159 @@
+.backdrop{
+    position: fixed;
+    top:0 ;
+    width: 100%;
+    height: 100%;
+    background-color:#FCFCFC ;
+    opacity: 1;
+    overflow-y: scroll;
+    
+}
+
+.modal-ingredients{
+    display:inline-block ;
+    position: absolute;
+     max-width: 280px;
+     width: 100%;
+     height: 968px;
+    padding: 28px 20px;
+    background-color:#FCFCFC ;
+    border-color:2px solid #F8D24E;
+    border-radius: 10px ;
+    
+   
+
+&__title{
+ display:flex ;
+ font-family: 'Seymour One';
+ font-weight: 400;
+ font-size: 20px;
+ line-height:1.4em;
+ color:#131313 ;
+ align-items:center ;
+ text-align: center;
+ margin-bottom:20px ;
+
+}
+&__types{
+  display: flex;
+  gap:10px ;
+  justify-content: center;
+  align-items: center;
+
+}
+&__weight{
+  margin:30px 0;
+
+}
+&__mark.link {
+  display: block;
+  width:53px ; 
+  height:72px ;
+  color: #000;
+  border-radius: 40px;
+  border-color:2px solid #9CBE8F;
+
+
+
+}
+
+
+
+&__item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: calc((100% / 4 )) ;
+ 
+}
+
+&__pretitle{
+display: flex;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+display: flex;
+align-items: center;
+color: #131313;
+justify-content: center;
+margin-bottom: 24px;
+}
+&__ingredients{
+  display: block;
+  width: auto;
+  margin:0  auto ;
+  margin-bottom: 40px;
+  
+}
+&__list{
+  display: block;
+} 
+  &__item-list{
+ display: flex;
+  justify-content:space-between ;
+  gap: 11px;
+
+  }
+  
+
+&__text{
+ font-size: 14px;
+ line-height: 1.76em;
+ display: flex;
+ align-items: center;
+ text-align: center;
+ letter-spacing: 0.04em;
+
+color: #131313;
+display: flex;
+
+}
+
+&__form{
+display: block;
+gap: 16px;
+width:100% ; 
+position: relative; 
+}
+
+
+&__lable{
+position: absolute;
+display: inline-block;
+padding:10px 10px;
+font-size:14px ;
+line-height: 1.4em;
+color: #131313;
+
+text-align: left;
+
+}
+
+&__input:not(:last-child){
+margin-bottom:16px ;
+
+}
+&__input{
+  display:inline-block ;
+  width: 240px;
+  height: 42px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+}
+
+&__comments{
+  display: inline-block;
+  width: 240px;
+  height: 84px;
+  resize:none ;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84A178;
+  border-radius: 10px;
+
+
+
+}
+
+}
+

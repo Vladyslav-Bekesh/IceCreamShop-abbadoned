@@ -1,15 +1,54 @@
 .products{
-    display: block;
-
-    @media screen  and (min-width:1200px){
-      display: flex;
-
-
-
-      
-    }
+  
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #AEC6A5;
+    background-image: url('../images/products/backgroud_mobile1x.jpg');
+   
+    @media (min-device-pixel-ratio: 2),
     
+    (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+    background-image: url('../images/products/backgroud_mobile2x.jpg');
+  }
+
+   @media screen  and (min-width:768px){
      
+     
+       background-image: url('../images/products/background_tablet1x.jpg');
+      
+       @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url('../images/products/background_tablet2x.jpg');        }
+
+    @media screen  and(min-width:1200px){
+   background-image: url('../images/products/backgroud_desktop1x.jpg');
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../images/products/backgroud_desktop2x.jpg');
+  }
+
+  
+ }
+      
+   }
+    
+  &__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+
+  }   
  
   &__lable{
   display: flex;
@@ -26,35 +65,63 @@
       display: block;
       text-align: center;
       font-size:30px;
+      line-height:1.27em;
      
       }
 
-  &__text{
-    font-size: 14px;
-  }
+      &__item{
+        position: relative;
+        display: flex;
+            }
 
-  &__item{
+    &__card.link{
+              display: block;
+            }
 
-    display: flex;
-    flex-direction: column;
-    width:100% ;
-      margin-top:168px ;
-  }
-   
+   &__pretitle{
+  font-weight: 800;  
+  font-size:20px; 
+  line-height: 1.2em;
+  color: #131311;
+  align-items: center;
+  justify-content: center;
+
   
 
+   }
+  &__text{
+    font-size: 14px;
+    padding: 40px;
+  }
+
+  
+  &__card-icecream::before{
+   content:'';
+   position: absolute;
+   background-image:url('../images/products/kelsey1xmobo.jpg');
+   top:100px ;
+   left:100px ;
+   
+   } 
+ 
+
   &__card-icecream {
+    position: relative;
     display: block;
    text-align: center;
    width:280px;
    height: 420px;
    background-color:#AEC6A5 ;
    border-radius: 24px;
-
+   
    
   }
 
+  
+  
+
   &__card-milkshakes{
+    position: relative;
     display: block;
     text-align: center;
     width: 280px;
@@ -66,12 +133,14 @@
   }
  
   &__card-icecoffee{
+    position: relative;
     display: block;
     width:280px ;
     height:420px ;
     text-align: center;
     background-color:#D6936D ;
     border-radius:24px ;
+    
   }
 
 
