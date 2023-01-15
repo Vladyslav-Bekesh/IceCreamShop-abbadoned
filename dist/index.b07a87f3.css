@@ -349,6 +349,7 @@ body {
   font-size: 12px;
   font-weight: 600;
   line-height: 1.25;
+  transition: backgroundcolor .25s cubic-bezier(.4, 0, .2, 1);
   display: block;
 }
 
