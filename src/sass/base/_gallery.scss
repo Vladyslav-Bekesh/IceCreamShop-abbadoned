@@ -1,0 +1,90 @@
+
+.gallery {
+	position: relative;
+	padding-top: 178px;
+	background-image: url('../images/gallery-reviews/Background_tablet.jpg');
+	background-position: left top;
+
+	@media screen and (min-width: 480px) {
+		padding-top: 257px;
+	}
+
+	 @media screen and (min-width: 768px) {
+		padding-top: 283px;
+	 }
+
+	 @media screen and (min-width: 1200px) {
+		padding-top: 464px;
+		background-image: url('../images/gallery-reviews/Background_tablet.jpg');
+	 }
+}
+
+.swiper-gallery{
+	width: 280px;
+	border-radius: 8px;
+	margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+
+	@media screen and (min-width: 480px) {
+		width: 440px;
+ 	}
+	@media screen and (min-width: 768px) {
+		border-radius: 18px;
+		width: 704px;
+	}
+	@media screen and (min-width: 1200px) {
+		border-radius: 24px;
+		width: 1013px;
+	}
+}
+
+.gallery-box {
+	position: absolute;
+	left: 18px;
+	top: -40px;
+	@media screen and (min-width: 480px) {
+		width: 440px;
+		left: 19px;
+ 	}
+	 @media screen and (min-width: 768px) {
+		border-radius: 18px;
+		width: 704px;
+		left: 32px;
+	 }
+	@media screen and (min-width: 1200px) {
+		border-radius: 24px;
+		width: 1013px;
+		left: 85px;		
+		top: -68px;
+		 }
+}
+
+.gallery__img {
+	width: 100%;
+
+	@media screen and (min-width: 480px) {
+		top: 50px;
+		width: 440px;
+ 	}
+
+	 @media screen and (min-width: 768px) {
+		border-radius: 18px;
+		top: 50px;
+		width: 704px;
+	 }
+	@media screen and (min-width: 1200px) {
+		border-radius: 24px;
+		top: 115px;
+		width: 1013px;
+		 }
+}
+
+.swiper {
+	width: 600px;
+	height: 300px;
+ }

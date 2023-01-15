@@ -1,0 +1,135 @@
+.customer-reviews {
+	background-image: url('../images/gallery-reviews/Background_tablet.jpg');
+	padding-bottom: 40px;
+}
+
+.reviews {
+	text-align: center;
+}
+
+.reviews__foto {
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-bottom: 32px;
+	background-color: hsla(0, 0%, 99%, 0);
+}
+
+.reviews__wrapper {
+	display: flex;
+	align-items: center;
+	width: 280px;
+	min-height: 256px;
+	padding: 35px 39px;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-bottom: 32px;
+
+	background-color: var(--main-background-color);
+
+	@media screen and (min-width: 768px) {
+				border-radius: 24px;
+		width: 705px;	
+		padding: 28px 80px;
+ 	}
+
+	 @media screen and (min-width: 1200px) {
+		width: 968px;	
+		padding: 42px 74px;
+ 	}
+}
+
+.reviews__text {
+	font-size: 12px;
+	line-height: 2.55;
+	letter-spacing: 0.04em;
+
+	color: var(--main-text-color);
+
+	@media screen and (min-width: 768px) {
+		font-size: 14px;
+ 	}
+}
+
+.reviews__title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.86;
+	margin-bottom: 12px;
+
+	color: var(--secondary-text-color);
+
+	@media screen and (min-width: 768px) {
+		font-size: 20px;
+ 	}
+
+	 @media screen and (min-width: 1200px) {
+		margin-bottom: 32px;
+ 	}
+}
+
+.reviews__list {
+	display: flex;
+	justify-content: center;
+}
+
+.reviews__item {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #D9D9D9;
+
+	&:not(:last-child) {
+		margin-right: 18px;
+	}
+}
+
+.reviews__item--active {
+	background-color: var(--main-background-color);
+}
+
+ .swiper-reviews {
+	width: 280px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	z-index: 1;
+
+	@media screen and (min-width: 480px) {
+		width: 440px;
+ 	}
+	@media screen and (min-width: 768px) {
+		border-radius: 18px;
+		width: 704px;
+	}
+	@media screen and (min-width: 1200px) {
+		border-radius: 24px;
+		width: 1013px;
+	}
+}
+
+.swiper-pagination {
+	position: absolute;
+	bottom: -4px !important;
+	left: 10px;
+	margin: 0;
+}
+.swiper-pagination-bullet {
+	width: 12px !important;
+	height: 12px !important;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+	background:#D9D9D9 !important;
+	opacity: 1;
+ }
+
+ .swiper-pagination-bullet-active {
+	background: #84A178 !important;
+	color: #84A178;
+ }
