@@ -1,6 +1,5 @@
 .menu {
-    background-color: #fff;
-
+    
     position: fixed;
     top: 0;
     right: 0;
@@ -9,6 +8,12 @@
     padding: 12px 20px 64px 32px;
     width: 100vw;
     height: 100vh;
+
+    text-align: center;
+}
+
+.menu-list {
+    margin-top: 51px;
 }
 
 .button-close {
@@ -16,4 +21,23 @@
 
     background-color: transparent;
     border-color: transparent;
+}
+
+.menu-list__item {
+    &:not(:last-child){
+        margin-bottom: 32px;
+    }
+}
+
+.menu-list__link:hover,
+.menu-list__link:focus {
+    color: white;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
 }
