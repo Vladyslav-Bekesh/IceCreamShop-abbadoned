@@ -900,14 +900,15 @@ body {
 
 .gallery-box {
   position: absolute;
-  top: -40px;
-  left: 18px;
+  top: 39px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 480px) {
   .gallery-box {
     width: 440px;
-    left: 19px;
+    top: 39px;
   }
 }
 
@@ -915,7 +916,7 @@ body {
   .gallery-box {
     width: 704px;
     border-radius: 18px;
-    left: 32px;
+    top: 95px;
   }
 }
 
@@ -923,8 +924,9 @@ body {
   .gallery-box {
     width: 1013px;
     border-radius: 24px;
-    top: -68px;
-    left: 85px;
+    top: 126px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
