@@ -119,6 +119,7 @@ summary {
   --secondary-text-color: #131313;
   --accent-color: #f8d24e;
   --buttons-bgc: #0a8817;
+  --disabled-color: #ababab;
 }
 
 ul {
@@ -186,74 +187,124 @@ body {
   padding: 60px 0;
 }
 
-.pretty-button {
+.btn {
+  cursor: pointer;
   color: #000;
-  text-align: center;
+  border-color: var(--accent-color);
+  background-color: #0000;
   border-radius: 10px;
+  outline: #0000;
+  justify-content: center;
   align-items: center;
-  padding: 12px 34px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.28571;
   display: flex;
 }
 
-.pretty-button--fill {
+.btn:hover {
+  border-color: var(--buttons-bgc);
+}
+
+.btn:focus {
+  border-color: var(--buttons-bgc);
+  color: var(--main-text-color);
+  fill: var(--main-text-color);
+}
+
+.btn:disabled {
+  border-color: var(--disabled-color);
+}
+
+.btn--products {
+  min-width: 134px;
+}
+
+@media screen and (max-width: 767px) {
+  .btn--products {
+    min-width: 108px;
+    border-radius: 8px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+}
+
+.btn--franchise {
+  min-width: 196px;
+}
+
+.button {
+  cursor: pointer;
+  color: #000;
   background-color: var(--accent-color);
-  border: none;
+  border-color: #0000;
+  border-radius: 10px;
+  outline: #0000;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28571;
+  display: flex;
 }
 
-.pretty-button--fill:hover {
+.button:hover {
   background-color: var(--buttons-bgc);
 }
 
-.pretty-button--fill:focus {
+.button:focus {
   background-color: var(--buttons-bgc);
-  color: #fff;
+  color: var(--main-text-color);
+  fill: var(--main-text-color);
 }
 
-.pretty-button--empty {
-  border: 2px solid;
-  border-color: var(--accent-color);
-  background-color: #0000;
+.button:disabled {
+  background-color: var(--disabled-color);
 }
 
-.pretty-button--empty:hover {
-  border-color: var(--buttons-bgc);
+.button--read-more {
+  min-width: 164px;
 }
 
-.pretty-button--empty:focus {
-  border-color: var(--buttons-bgc);
-  color: #fff;
+.button--location {
+  min-width: 196px;
 }
 
-.not-pretty-button {
-  text-align: center;
+.button--buy-now {
+  min-width: 152px;
+}
+
+.btn-link {
+  cursor: pointer;
   color: var(--accent-color);
   background-color: #0000;
-  border: none;
+  border-color: #0000;
+  outline: #0000;
+  justify-content: center;
   align-items: center;
   padding: 0;
   font-size: 12px;
   font-weight: 600;
-  line-height: 1.25;
-  text-decoration-line: underline;
+  line-height: 1.5;
   display: flex;
 }
 
-@media screen and (min-width: 1200px) {
-  .not-pretty-button {
-    font-size: 14px;
-    line-height: 1.21429;
-  }
-}
-
-.not-pretty-button:hover {
+.btn-link:hover {
   color: var(--buttons-bgc);
 }
 
-.not-pretty-button:focus {
-  color: #fff;
+.btn-link:focus {
+  color: var(--main-text-color);
+}
+
+.btn-link:disabled {
+  color: var(--disabled-color);
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */
