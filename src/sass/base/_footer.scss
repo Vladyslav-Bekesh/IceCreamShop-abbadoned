@@ -89,6 +89,9 @@
 
 .socials-icon__link {
     fill: #84A178;
+    display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 @media screen and (min-device-width: 768px),
