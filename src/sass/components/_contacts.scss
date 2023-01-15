@@ -1,0 +1,228 @@
+.contacts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+}
+
+.contacts-grid__item {
+  width: 280px;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+  border-radius: 24px;
+
+  background-color: #fcfcfc;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 32px) / 3);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 50px;
+  }
+}
+
+.contacts__representation {
+  display: inline-block;
+  padding: 4px 22px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+
+  letter-spacing: 0.04em;
+
+  color: var(--secondary-text-color);
+  background-color: #f8d24e;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__adress {
+  position: relative;
+  margin-bottom: 48px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+
+  color: var(--secondary-text-color);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 64px;
+    padding-right: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 50px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(24px);
+    width: 100%;
+    height: 1px;
+
+    background-color: #e1e1e1;
+    @media screen and (min-width: 768px) {
+      transform: translateY(32px);
+    }
+  }
+}
+
+.contacts__adress-link {
+  display: block;
+  margin-top: 8px;
+
+  line-height: 1.83;
+  color: #d6936d;
+  @media screen and (min-width: 768px) {
+    margin-top: 12px;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.contacts__work-time {
+  position: relative;
+  margin-bottom: 48px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: var(--secondary-text-color);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 64px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(24px);
+    width: 100%;
+    height: 0px;
+
+    border: 1px solid #e1e1e1;
+    @media screen and (min-width: 768px) {
+      transform: translateY(32px);
+    }
+  }
+  &--time {
+    display: block;
+
+    color: #ababab;
+  }
+  &--margin {
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.contacts__link {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+
+  color: var(--secondary-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &--tel {
+    margin-bottom: 6px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+// .btn {
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   min-width: 196px;
+//   border-radius: 10px;
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   cursor: pointer;
+
+//   font-weight: 600;
+//   font-size: 14px;
+//   line-height: 1.29;
+//   color: var(--secondary-text-color);
+
+//   &--location {
+//     background-color: var(--accent-color);
+//     border: transparent;
+//     &:hover,
+//     &:focus {
+//       background-color: var(--buttons-bgc);
+//     }
+//     &:focus {
+//       color: var(--main-text-color);
+//       fill: var(--main-text-color);
+//     }
+//   }
+//   &--franchise {
+//     border-color: var(--accent-color);
+//     background-color: transparent;
+//     &:hover,
+//     &:focus {
+//       border-color: var(--buttons-bgc);
+//     }
+//     &:focus {
+//       color: var(--main-text-color);
+//       fill: var(--main-text-color);
+//     }
+//   }
+// }
+
+.pretty-button--contacts {
+  min-width: 196px;
+  cursor: pointer;
+  outline: none;
+  &:focus {
+    fill: #ffffff;
+  }
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.button-icon {
+  margin-left: 4px;
+}
