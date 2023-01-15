@@ -538,34 +538,15 @@ is-hidden {
   line-height: 1.42;
 }
 
-.forma-modal__button {
-  min-width: 114px;
+.pretty-button {
+  width: 114px;
   height: 42px;
-  background: #f8d24e;
-  border: none;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 12px 34px;
-  transition: background-color .25s linear;
-  display: flex;
+  transition: background-color .2s linear, color .2s linear;
 }
 
-.forma-modal__button:hover, .forma-modal__button:focus {
-  background-color: var(--buttons-bgc);
-}
-
-.forma-modal__button--text {
-  color: var(--secondary-text-color);
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.25;
-}
-
-.forma-modal__button:hover .forma-modal__button--text {
+.pretty-button:hover, .pretty-button:focus {
   color: #fff;
 }
 
