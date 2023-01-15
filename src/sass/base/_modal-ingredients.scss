@@ -22,8 +22,9 @@
     border-color:  #F8D24E;
     border-radius:10px ;
     
-   
+  //  photo//
 
+  
 &__title{
  display:flex ;
  font-family: 'Seymour One';
@@ -54,7 +55,7 @@
 
 &__item{
   display: flex;
-  justify-content: center;
+  justify-content:flex-start;
   flex-basis: calc((100% / 4 )) ;
  
 }
@@ -87,7 +88,8 @@
   border: 2px  solid;
   border-color: #9CBE8F;
   border-radius: 40px;
-
+ align-items: center;
+ 
 }
 
 &__item-weight-text{

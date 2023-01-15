@@ -379,7 +379,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .modal-ingredients__item {
   flex-basis: 25%;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
 }
 
@@ -409,6 +409,7 @@ h1, h2, h3, h4, h5, h6, p {
   border: 2px solid #9cbe8f;
   border-radius: 40px;
   flex-direction: column-reverse;
+  align-items: center;
   display: flex;
 }
 
