@@ -498,21 +498,7 @@ body {
   margin: 0 auto;
 }
 
-.pretty-button {
-  color: #000;
-  text-align: center;
-  border-radius: 10px;
-  align-items: center;
-  padding: 12px 34px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.28571;
-  display: flex;
-}
-
 .pretty-button--fill {
-  background-color: var(--accent-color);
-  border: none;
   transition-property: background-color, fill, box-shadow;
   transition-duration: .25s;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
@@ -560,7 +546,7 @@ body {
     max-width: 1168px;
     flex-flow: row;
     justify-content: space-around;
-    padding: 94px 15px;
+    padding: 0 15px;
   }
 }
 
