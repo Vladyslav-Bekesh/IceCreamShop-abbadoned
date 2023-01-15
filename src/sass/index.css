@@ -1,0 +1,117 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+:root {
+  --background-color:#84A178;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.background-color {
+  margin: 0 auto;
+  background-color: var(--background-color);
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .background-color {
+    width: 481px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .background-color {
+    width: 769px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .background-color {
+    width: 1201px;
+  }
+}
+
+.container {
+  padding: 0 21px;
+  width: 100%;
+  background-color: #84A178;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding: 0 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 29px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0 16px;
+  }
+}
+
+.section {
+  padding: 63px 0;
+}
+@media screen and (min-width: 480px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+
+.products {
+  width: 100%;
+  padding: 60px 0;
+}
+.products__lable {
+  display: block;
+  font-style: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #131313;
+}
+.products__title {
+  font-family: Seymour One;
+  font-style: 800;
+  font-size: 30px;
+  line-height: 1.27;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #131313;
+}/*# sourceMappingURL=index.css.map */
