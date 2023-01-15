@@ -40,19 +40,13 @@
         <div class="products__card-icecream">
          
     <div class="products__thum">
-           <!-- <picture>
-            <source srcset='./images/products/kelseydesk1x.jpg 1x,
-            ./images/products/kelseydesk2x.jpg 2x' 
-            media="(min-width:1200px)">
-            <source srcset='./images/products/kelseytab1x.jpg 1x,
-            ./images/products/kelseytab2x.jpg 2x' 
-            media="(min-width:768px)">
-            <source srcset='./images/products/kelsey1xmobo.jpg 1x,
-            ./images/products/kelsey1xmobo.jpg 2x' 
-            media="(min-width:480px)">
+         <picture>
+            <source srcset="/kelseydesk1x.7e66d698.jpg 1x, /kelseydesk2x.a0cbdd18.jpg 2x" media="(min-width:1200px)">
+            <source srcset="/kelseytab1x.450e7237.jpg 1x, /kelseytab2x.5f144c86.jpg 2x" media="(min-width:768px)">
+            <source srcset="/kelsey1xmobo.625ff2e7.jpg 1x, /kelsey1xmobo.625ff2e7.jpg 2x" media="(min-width:480px)">
               
-         <img src='./images/products/kelsey1xmobo.jpg' width="200" alt="три морозива">
-         </picture>                     -->
+         <img src="/kelsey1xmobo.625ff2e7.jpg" width="200" alt="три морозива">
+         </picture>                  
             </div>
          
      <h3 class="products__pretitle">ice cream</h3>
@@ -177,21 +171,45 @@
     
     
      <div class="modal-ingredients__weight">  
-     <ul class="modal-ingredients__types list">
+
+        <ul class="modal-ingredients__types list">
         <li class="modal-ingredients__item">
-          <a href="" class="modal-ingredients__mark link"></a>   
+            <div class="modal-ingredients__item-weight">
+                <p class="modal-ingredients__item-weight-text">kcal</p>
+         <div class="modal-ingredients__item-dot">
+            <p class="modal-ingredients__item-dot-text">320</p>
+         </div> 
+        </div>
         </li>
         <li class="modal-ingredients__item">
-        <a href="" class="modal-ingredients__mark link"></a>
+            <div class="modal-ingredients__item-weight">
+                <p class="modal-ingredients__item-weight-text">Prote...</p>
+            <div class="modal-ingredients__item-dot">
+                <p class="modal-ingredients__item-dot-text">4g</p>
+            </div>
+             </div> 
+        
      </li>  
         <li class="modal-ingredients__item">
-        <a href="" class="modal-ingredients__mark link"></a> 
+            <div class="modal-ingredients__item-weight">
+                <p class="modal-ingredients__item-weight-text">Fats</p>
+            
+            <div class="modal-ingredients__item-dot">
+                <p class="modal-ingredients__item-dot-text">8,2g</p>
+             </div> </div>
     </li>  
         <li class="modal-ingredients__item">
-        <a href="" class="modal-ingredients__mark link"></a> 
+            <div class="modal-ingredients__item-weight">
+                <p class="modal-ingredients__item-weight-text">Carbs</p>
+            
+            <div class="modal-ingredients__item-dot">
+                <p class="modal-ingredients__item-dot-text">40,4g</p>
+             </div> </div>
        </li>  
     </ul>
     </div>
+      
+    
       
          <p class="modal-ingredients__pretitle">Ingredients</p> 
          <div class="modal-ingredients__ingredients">
@@ -245,6 +263,7 @@
     </form>
     </div>  
     </div>
+
     
     
   </body>
