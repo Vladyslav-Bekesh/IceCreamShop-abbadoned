@@ -274,13 +274,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 .socials {
   justify-content: flex-end;
+  align-items: center;
   margin-bottom: 20px;
   display: flex;
 }
 
-.socials-icon {
-  width: 34px;
-  height: 34px;
+.socail__icon {
+  width: 40px;
+  height: 40px;
+  background-color: #f8d24e;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -288,12 +290,12 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
 }
 
-.socials-icon:hover .socials-icon__link, .socials-icon:focus .socials-icon__link {
+.socail__icon:hover .socials-icon__link, .socail__icon:focus .socials-icon__link {
   fill: #fcfcfc;
 }
 
 .socials-icon__link {
-  fill: #f8d24e;
+  fill: #84a178;
 }
 
 @media screen and (min-device-width: 768px), screen and (min-width: 768px) {
