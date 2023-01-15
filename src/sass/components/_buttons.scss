@@ -3,6 +3,10 @@
 .pretty-button{
   padding: 12px 34px;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
 
   //txt props
   font-weight: 600;
@@ -10,9 +14,7 @@
   line-height: calc(18/14);
   color: #000;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
+
 
 }
 
