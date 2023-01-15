@@ -295,6 +295,7 @@ is-hidden {
 @media screen and (min-width: 768px) {
   .modal-buy-now {
     max-width: 568px;
+    height: 644px;
   }
 }
 
