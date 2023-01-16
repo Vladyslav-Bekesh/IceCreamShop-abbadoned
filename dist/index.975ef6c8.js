@@ -503,6 +503,12 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"8lqZg":[function(require,module,exports) {
+var _mainJs = require("../src/js/main.js");
+
+},{"../src/js/main.js":"1SICI"}],"1SICI":[function(require,module,exports) {
+var _swiper = require("./swiper");
+
+},{"./swiper":"rrgcw"}],"rrgcw":[function(require,module,exports) {
 const swiperGalerry = new Swiper(".swiper-gallery", {
     // Default parameters
     slidesPerView: 1,
