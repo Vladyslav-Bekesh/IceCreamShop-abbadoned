@@ -450,6 +450,7 @@ is-hidden {
 }
 
 .modal-buy-now__text.modal-buy-now__text--yellow {
+  z-index: -1;
   background: #efd478;
   border: 2px solid #efd478;
   padding: 96px 13px 20px;

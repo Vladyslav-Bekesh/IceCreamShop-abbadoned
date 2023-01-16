@@ -177,6 +177,7 @@ is-hidden{
         background: #EFD478;
         border: 2px solid #EFD478;
         box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+        z-index: -1;
     }
     &.modal-buy-now__text--brown{
         padding: 95px 13px 20px 13px;
