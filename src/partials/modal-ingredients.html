@@ -1,0 +1,117 @@
+<div class="backdrop" data-modal>
+    <div class="modal__ingredients">
+  
+      <form class="ingredients__form">
+        
+        <p class="ingredients__title">Chololate icecream</p>
+  
+          <div class="chocolate">
+          <picture>
+            <source srcset="./images/hero/chocolate.png   1x, ./images/hero/chocolate2x.png 2x" media="(max-width: 479px)">
+            <source srcset="./images/hero/tablet-desktop-chocolate.png   1x, ./images/hero/tablet-desktop-chocolate2x.png 2x" media="(min-width: 480px)">
+            <img class="chocolate__img" src="./images/hero/chocolate.png" alt="Фото морозива Ріжок">
+          </picture>
+          </div>
+  
+          <div class="chocolate__shadow"></div>
+
+          <div class="bg-checkbox-wrap">
+            <div class="check__boxes">
+            <input type="checkbox" id="bg-checkbox" />
+            <label id="bg-checkbox-button" for="bg-checkbox">
+                <span id="knob">320</span>
+                <span id="ok">kcal</span>
+            </label>
+            </div>
+    
+            <div class="check__boxes">
+            <input type="checkbox" id="bg-checkbox" />
+            <label id="bg-checkbox-button" for="bg-checkbox">
+                <span id="knob">4g</span>
+                <span id="ok">Prote...</span>
+            </label>
+            </div>
+            <div class="check__boxes">
+            <input type="checkbox" id="bg-checkbox" />
+            <label id="bg-checkbox-button" for="bg-checkbox">
+                <span id="knob">8,2g</span>
+                <span id="ok">Fats</span>
+            </label>
+            </div>
+            <div class="check__boxes">
+            <input type="checkbox" id="bg-checkbox" />
+            <label id="bg-checkbox-button" for="bg-checkbox">
+                <span id="knob">40,4g</span>
+                <span id="ok">Carbs</span>
+            </label>
+            </div>
+         </div> 
+
+         <p class="ingredients__labe">Ingredients</p>
+
+          <div class="ingredients">         
+          
+          <ul class="ingredients__list">
+            <li class="ingredients__items">
+                <p class="ingredients__elem">Milk</p>
+                <p class="ingredients__elem">100ml</p>
+            </li>
+            <li class="ingredients__items">
+                <p class="ingredients__elem">Belgian chocolate</p>
+                <p class="ingredients__elem">20g</p>
+            </li>
+            <li class="ingredients__items">
+                <p class="ingredients__elem">Cream</p>
+                <p class="ingredients__elem">150 ml</p>
+            </li>
+            <li class="ingredients__items">
+                <p class="ingredients__elem">Cocoa powder</p>
+                <p class="ingredients__elem">30g</p>
+            </li>
+            <li class="ingredients__items">
+                <p class="ingredients__elem">Sugar</p>
+                <p class="ingredients__elem">40g</p>
+            </li>
+            <li class="ingredients__items">
+                <p class="ingredients__elem">Vanilla sugar</p>
+                <p class="ingredients__elem">10g</p>
+            </li>
+          </ul>
+          </div>
+        
+       <div class="ingredients__main"> 
+          <div class="ingredients__field">
+        <label class="ingredients__label">
+          <input type="text" name="username" class="ingredients__input" placeholder="Name" pattern="[a-z]{1,15}" required>
+        </label>
+      </div>
+
+      <div class="ingredients__field">
+        <label class="ingredients__label">
+          <input type="tel" name="tel" class="ingredients__input" placeholder="Phone" pattern="\+?[0-9\s\-\(\)]+" required>
+        </label>
+      </div>
+
+      <div class="ingredients__field">
+        <label class="ingredients__label">
+          <textarea name="coments" cols="30" rows="10" class="ingredients__textarea" placeholder="Comment"></textarea>
+        </label>
+      </div>
+    </div>
+        
+      <button type="submit" class="ingredients__send">Submit</button>
+
+
+        
+
+      </form>
+  
+  
+      <button type="button" class="ingredients__close" data-modal-close>
+        <svg class="ingredients__btn" width="18px" height="18px">
+          <use href="./images/symbol-defs.svg#close" class="ingredients__img"></use>
+        </svg>
+      </button>
+  
+    </div>
+  </div>

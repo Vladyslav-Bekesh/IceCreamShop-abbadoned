@@ -1,0 +1,224 @@
+.about {
+  padding: 60px auto;
+}
+
+.about__name {
+  align-items: center;
+}
+
+.about__label {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  text-align: center;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
+}
+.about__title {
+  max-width: 200px;
+  margin: 0 auto;
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 1.27;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--main-text-color);
+  margin-bottom: 54px;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    max-width: 454px;
+    margin-bottom: 72px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 481px;
+    font-size: 36px;
+    margin-bottom: 82px;
+  }
+}
+
+.about__set {
+  display: flex;
+  width: 280px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 704px;
+    // padding: 32px;
+    gap: 38px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 1063px;
+    padding: 17px 0 21px;
+    gap: 109px;
+    margin-bottom: 60px;
+  }
+}
+
+.about__wrap {
+  position: relative;
+  &::after {
+    position: absolute;
+    top: -22px;
+    width: 279px;
+    height: 278px;
+    z-index: -1;
+
+    background-image: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    );
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+
+    border-radius: 50%;
+    content: '';
+
+    @media screen and (min-width: 768px) {
+      width: 330px;
+      height: 330px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 490px;
+      height: 490;
+    }
+  }
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: rotate(2turn);
+  }
+}
+
+.about__img {
+  width: 279px;
+  height: 278px;
+  flex-grow: 1;
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 490px;
+  }
+}
+.about__photo {
+  margin: 0 auto;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 490px;
+  }
+}
+
+.about__block {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 31px 0 16px;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+  }
+}
+
+.about__list {
+  margin: 0 auto 24px auto;
+  width: 220px;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+  }
+}
+
+.about__part {
+  list-style: none;
+  width: 220px;
+  margin: 0 auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--main-text-color);
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    text-align: left;
+    line-height: 1.76;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1, 76;
+    width: 463px;
+    text-align: left;
+  }
+}
+
+.about--bigscreen {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.button--about {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.pretty-button--fill {
+  transition-property: background-color, fill, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: var(--buttons-bgc);
+    box-shadow: 0px 0px 8px rgba(255, 222, 34, 0.671);
+  }
+
+  &:focus {
+    background-color: var(--buttons-bgc);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.733);
+    color: #fff;
+    fill: #fff;
+  }
+}
