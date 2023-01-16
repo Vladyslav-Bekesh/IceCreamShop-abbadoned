@@ -1261,10 +1261,6 @@ body {
   }
 }
 
-.background-color .container {
-  padding: 0;
-}
-
 .hero__box {
   padding-top: 50px;
   position: relative;
@@ -1346,9 +1342,20 @@ body {
   box-shadow: 0 4px 4px #00000040;
 }
 
-.hero__link:hover, .hero__link:focus {
-  color: #f8d24e;
-  transition: color .25s cubic-bezier(.4, 0, .2, 1);
+.hero__products:hover {
+  border: 3px solid #0a8817;
+  transition: border .25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.hero__products:focus {
+  color: #fcfcfc;
+  border: 3px solid #0a8817;
+  transition: border .25s cubic-bezier(.4, 0, .2, 1), color .25s cubic-bezier(.4, 0, .2, 1);
+}
+
+.hero__products:disabled {
+  border: 3px solid #ababab;
+  transition: border .25s cubic-bezier(.4, 0, .2, 1);
 }
 
 @media screen and (min-width: 480px) {
@@ -1362,6 +1369,7 @@ body {
     margin-top: 24px;
     margin-bottom: 178px;
     margin-left: 32px;
+    padding: 12px 34px;
   }
 }
 
@@ -1384,6 +1392,18 @@ body {
   font-weight: 600;
   line-height: 1.25;
   text-decoration-line: underline;
+}
+
+.hero__how:hover {
+  color: #0a8817;
+}
+
+.hero__how:focus {
+  color: #fcfcfc;
+}
+
+.hero__how:disabled {
+  color: #ababab;
 }
 
 @media screen and (min-width: 480px) {
@@ -1500,7 +1520,7 @@ body {
   .hero__numbers {
     position: absolute;
     top: 28px;
-    right: 32px;
+    right: 12px;
   }
 
   .hero__numeric {
@@ -1515,11 +1535,21 @@ body {
     line-height: 1.21;
     display: flex;
   }
+}
 
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .hero__numeric {
+    font-size: 46px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .hero__numeric:not(:last-child) {
     margin-bottom: 20px;
   }
+}
 
+@media screen and (min-width: 768px) {
   .hero__num {
     color: #fcfcfc;
     margin-top: 4px;
@@ -1529,14 +1559,24 @@ body {
     font-weight: 400;
     line-height: 1.25;
   }
+}
 
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .hero__num {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .hero__label {
     max-width: 139px;
     position: absolute;
     bottom: 0;
     left: 216px;
   }
+}
 
+@media screen and (min-width: 768px) {
   .hero__text {
     color: #fcfcfc;
     font-family: Montserrat;
@@ -1545,12 +1585,16 @@ body {
     font-weight: 400;
     line-height: 1.42;
   }
+}
 
+@media screen and (min-width: 768px) {
   .hero__arrow:hover, .hero__arrow:focus {
     fill: #f8d24e;
     transition: fill .25s cubic-bezier(.4, 0, .2, 1);
   }
+}
 
+@media screen and (min-width: 768px) {
   .hero__icon {
     fill: #fcfcfc;
     margin-top: 12px;
