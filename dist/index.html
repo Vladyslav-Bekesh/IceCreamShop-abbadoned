@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice Cream Shop</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link rel="icon" type="image/ico" href="/favicon.335f1e99.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -64,7 +64,7 @@
           This is enough to choose ice cream and coffee for any mood!
         </li>
       </ul>
-      <button type="button" class="pretty-button pretty-button--fill button--about" data-modal-open="">
+      <button type="button" class="pretty-button pretty-button--fill button--about" data-modal="how-its-made">
         Read more
         <svg width="12" height="12">
           <use href="/symbol-defs.a8b2e413.svg#about-arrow"></use>
@@ -287,7 +287,7 @@
     
 
     <div class="backdrop">
-  <div class="modal-how-its-made">
+  <div class="modal-how-its-made" data-modal="how-its-made">
     <button type="button" class="close-btn">
       <svg width="24" height="24">
         <use href="/symbol-defs.a8b2e413.svg#close"></use>
