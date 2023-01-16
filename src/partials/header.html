@@ -1,5 +1,40 @@
-<header class="header">
-  <div class="container">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, quibusdam quia qui consequatur sunt vero perferendis tenetur blanditiis alias? Repudiandae labore officiis accusantium dolor dolorum molestiae exercitationem explicabo repellat eaque.</p>
+<header class="header background-color">
+  <div class="container container--flex">
+    <picture>
+      <source
+        srcset="./images/Logo.png 1x, ./images/logo-desktop-2x.png 2x"
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="./images/logo-tablet-1x.png 1x, ./images/logo-tablet-2x.png 2x"
+        media="(min-width:480px)"
+      />
+      <source srcset="./images/logo-mob-1x.png 1x, ./images/logo-mob-2x.png 2x" />
+      <img
+        class="logo"
+        srcset="./images/logo-desktop-2x.png 2x"
+        src="./images/Logo.png"
+        alt="Лого компанії"
+        width="60"
+      />
+    </picture>
+    <button class="button-menu" type="button">
+      <svg class="icon-menu" width="32" height="32">
+        <use href="./images/symbol-defs.svg#menu-button"></use>
+      </svg>
+    </button>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="navigation__link" href="">Home</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="">How it’s made?</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="">Our products</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container--padding">
+      <button class="pretty-button pretty-button--fill header-button" type="button">
+        Buy now<span>&gt;</span>
+      </button>
+    </div>
   </div>
 </header>
