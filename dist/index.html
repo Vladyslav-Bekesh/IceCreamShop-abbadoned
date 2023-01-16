@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ice Cream Shop</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Seymour+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/index.b07a87f3.css">
-    <script src="/index.975ef6c8.js" defer=""></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ice Cream Shop</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="icon" type="image/ico" href="/favicon.335f1e99.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Seymour+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/index.b07a87f3.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+</head>
+
+<body>
+	<!-- ❗️❗️❗️ Add partials like so for every page -->
 
     <!-- ELEMENTS -->
     <header class="header">
@@ -120,7 +124,7 @@
           This is enough to choose ice cream and coffee for any mood!
         </li>
       </ul>
-      <button type="button" class="pretty-button pretty-button--fill button--about" data-modal-open="">
+      <button type="button" class="pretty-button pretty-button--fill button--about" data-modal="how-its-made">
         Read more
         <svg width="12" height="12">
           <use href="/symbol-defs.a8b2e413.svg#about-arrow"></use>
@@ -173,18 +177,105 @@
       <section class="">
         
   <div class="container">
-    
+    <div class="gallery-box">
+      <div class="swiper-gallery">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="/gallery1@1200.4e511cdb.jpg 1x, /gallery1@1200x2.e36cd13d.jpg" media="(min-width: 1200px)">
+              <source srcset="/gallery1@480.be4153dc.jpg 1x, /gallery1@480x2.f19b7d18.jpg" media="(min-width: 768px)">
+              <source srcset="/gallery1@768.dab4946b.jpg 1x, /gallery1@768x2.ccaa0242.jpg" media="(min-width: 480px)">
+              <img class="gallery__img" src="/gallery1@320.6a2799d3.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="/gallery2@1200.1bd039b3.jpg 1x, /gallery2@1200x2.012b335f.jpg" media="(min-width: 1200px)">
+              <source srcset="/gallery2@480.61cedd8a.jpg 1x, /gallery2@480x2.5449c378.jpg" media="(min-width: 768px)">
+              <source srcset="/gallery2@768.40538ef3.jpg 1x, /gallery2@768x2.8f2b7a1f.jpg" media="(min-width: 480px)">
+              <img class="gallery__img" src="/gallery2@320.996ebbf5.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="/gallery3@1200.d3482bb4.jpg 1x, /gallery3@1200x2.9a27924b.jpg" media="(min-width: 1200px)">
+              <source srcset="/gallery3@480.ea8a02f5.jpg 1x, /gallery3@480x2.f3d1ff9f.jpg" media="(min-width: 768px)">
+              <source srcset="/gallery3@768.a108d447.jpg 1x, /gallery3@768x2.bb136175.jpg" media="(min-width: 480px)">
+              <img class="gallery__img" src="/gallery3@320.fbb52b06.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="reviews-box">
+      <div class="swiper-reviews">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews">
+              <picture>
+                <source srcset="/reviews1@320.d302d19e.jpg 1x, /reviews1@x2.2f7c00da.jpg 2x" media="(min-width: 1200px)">
+                <img class="reviews__foto" src="/reviews1@320.d302d19e.jpg" alt="">
+              </picture>
+              <div class="reviews__wrapper">
+                <p class="reviews__text">
+                  I love visiting your cafe.
+                  You prepare the most delicious ice cream in Los Angeles!
+                  In addition, you have beautiful serving, cozy atmosphere and polite staff.
+                </p>
+              </div>
+              <p class="reviews__title">
+                Emily, Los Angeles
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews">
+              <picture>
+                <source srcset="/reviews2@320.96c6bf96.jpg 1x, /reviews2@x2.7342a4d2.jpg 2x" media="(min-width: 1200px)">
+                <img class="reviews__foto" src="/reviews2@320.96c6bf96.jpg" alt="">
+              </picture>
+              <div class="reviews__wrapper">
+                <p class="reviews__text">
+                  Every day we come to you with friends after classes in college. We love your ice cream and
+                  casual atmosphere!
+                </p>
+              </div>
+              <p class="reviews__title">
+                Bryan, New-York
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="reviews">
+              <picture>
+                <source srcset="/reviews3@320.fdc4adc2.jpg 1x, /reviews3@x2.b442780b.jpg 2x" media="(min-width: 1200px)">
+                <img class="reviews__foto" src="/reviews3@320.fdc4adc2.jpg" alt="">
+              </picture>
+              <div class="reviews__wrapper">
+                <p class="reviews__text">
+                  Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the
+                  excellent service - always served politely and quickly!
+                </p>
+              </div>
+              <p class="reviews__title">
+                Diana, Chicago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
   </div>
 
         
-  <div class="container">
-    
-  </div>
 
       </section>
       <section class="section contacts">
   <div class="container">
-    <h2 class="is-hidden">Contacts</h2>
+    <h2 class="visually-hidden">Contacts</h2>
     <ul class="contacts-grid">
       <li class="contacts-grid__item">
         <p class="contacts__representation">CAFE</p>
@@ -203,10 +294,10 @@
           <span class="contacts__work-time--time">08:00 AM - 16:00 PM</span>
         </p>
         <p>
-          <a href="tel:+610383766284" class="contacts__link contacts__link--tel">
+          <a href="tel:+610383766284" target="_blank" class="contacts__link contacts__link--tel">
             +61(0) 383 766 284
           </a>
-          <a href="mailto:noreply@envato.com" class="contacts__link">
+          <a href="mailto:noreply@envato.com" target="_blank" class="contacts__link">
             noreply@envato.com
           </a>
         </p>
@@ -216,7 +307,7 @@
         <p class="contacts__representation">FOODTRUCK</p>
         <p class="contacts__adress">
           Los Angeles
-          <a href="https://goo.gl/maps/rqemDJqgC4AvsCtx7" class="contacts__adress-link" rel="noreferrer noopener">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
+          <a href="https://goo.gl/maps/rqemDJqgC4AvsCtx7" class="contacts__adress-link" target="_blank" rel="noreferrer noopener">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
           </a>
         </p>
         <p class="contacts__work-time">
@@ -228,10 +319,10 @@
           <span class="contacts__work-time--time">08:00 AM - 16:00 PM</span>
         </p>
         <p>
-          <a href="tel:+610383766284" class="contacts__link contacts__link--tel" rel="noreferrer noopener">
+          <a href="tel:+610383766284" target="_blank" class="contacts__link contacts__link--tel" rel="noreferrer noopener">
             +61(0) 383 766 284
           </a>
-          <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
+          <a href="mailto:noreply@envato.com" target="_blank" class="contacts__link">noreply@envato.com</a>
         </p>
       </li>
 
@@ -239,7 +330,7 @@
         <p class="contacts__representation">CAFE</p>
         <p class="contacts__adress">
           New York
-          <a href="https://goo.gl/maps/734teSvqBzN2GKCG9" class="contacts__adress-link">726 Sterling Pl, Brooklyn, NY 11222, USA
+          <a href="https://goo.gl/maps/734teSvqBzN2GKCG9" target="_blank" class="contacts__adress-link">726 Sterling Pl, Brooklyn, NY 11222, USA
           </a>
         </p>
         <p class="contacts__work-time">
@@ -252,10 +343,10 @@
           <span class="contacts__work-time--time">08:00 AM - 16:00 PM</span>
         </p>
         <p>
-          <a href="tel:+610383766284" class="contacts__link contacts__link--tel">
+          <a href="tel:+610383766284" target="_blank" class="contacts__link contacts__link--tel">
             +61(0) 383 766 284
           </a>
-          <a href="mailto:noreply@envato.com" class="contacts__link">
+          <a href="mailto:noreply@envato.com" target="_blank" class="contacts__link">
             noreply@envato.com
           </a>
         </p>
@@ -289,23 +380,23 @@
       </div>
       <div class="footer-column__contacts">
         <ul class="socials">
-          <li class="socials-icon">
-            <a href="#" class="socials-icon__link">
-              <svg class="socials-icon__link-image" height="34" width="34">
+          <li class="socail__icon">
+            <a href="https://github.com/Vladyslav-Bekesh/IceCreamShop" class="socials__link">
+              <svg class="social__image" height="22" width="22">
                 <use href="/symbol-defs.a8b2e413.svg#github"></use>
               </svg>
             </a>
           </li>
-          <li class="socials-icon">
-            <a href="#" class="socials-icon__link">
-              <svg class="socials-icon__link-image" height="34" width="34">
+          <li class="socail__icon">
+            <a href="https://telegram.org/" class="socials__link">
+              <svg class="social__image" height="22" width="22">
                 <use href="/symbol-defs.a8b2e413.svg#telegram"></use>
               </svg>
             </a>
           </li>
-          <li class="socials-icon">
-            <a href="#" class="socials-icon__link">
-              <svg class="socials-icon__link-image" height="34" width="34">
+          <li class="socail__icon">
+            <a href="https://www.facebook.com/" class="socials__link">
+              <svg class="social__image" height="22" width="22">
                 <use href="/symbol-defs.a8b2e413.svg#facebook"></use>
               </svg>
             </a>
@@ -326,8 +417,8 @@
   </div>
 </footer>
 
-    <!-- MODALS -->
-    <div class="modal-buy-now">
+	<!-- MODALS -->
+	<div class="modal-buy-now">
   <img src="#" alt="" class="modal-buy-now__img">
   <ul class="modal-buy-now__list">
     <li class="modal-buy-now__item"></li>
@@ -337,7 +428,7 @@
     <li class="modal-buy-now__item"></li>
   </ul>
 </div>
-    <div class="backdrop is-hidden" data-modal="">
+	<div class="backdrop is-hidden" data-modal="">
     <div class="modal__franshise">
   
       <form class="franshise__form">
@@ -389,7 +480,7 @@
   
     </div>
   </div>
-    <div class="backdrop is-hidden" data-modal="">
+	<div class="backdrop is-hidden" data-modal="">
     <div class="modal__ingredients">
   
       <form class="ingredients__form">
@@ -506,9 +597,31 @@
   
     </div>
   </div>
-    
-    
+	<div class="backdrop">
+  <div class="modal-location">
+    <button type="button" class="close-btn">
+      <svg width="24" height="24">
+        <use href="/symbol-defs.a8b2e413.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-location__title">Our Locations</p>
+    <div class="modal-location__wrapper">
+      <picture>
+        <source srcset="/map-tab.e84bfd2a.jpg 1x, /map-tab@2.f72aee6a.jpg 2x" media="(min-width: 768px)" type="image/jpeg">
+        <source srcset="/map-mob.7eaa4d17.jpg 1x, /map-mob@2.ef19d0eb.jpg 2x" media="(max-width: 767px)" type="image/jpeg">
 
+        <img src="/map-mob.7eaa4d17.jpg" alt="map">
+      </picture>
+    </div>
+    <a href="https://goo.gl/maps/x8WFKUH9fPPbQqz98" rel="noreferrer noopener" target="_blank" class="modal-location__link">Open map</a>
+  </div>
+</div>
+
+	
+
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="/index.975ef6c8.js" defer=""></script>
     <div class="backdrop is-hidden">
   <div class="modal-how-its-made">
     <button type="button" class="close-btn">
@@ -528,5 +641,6 @@
   </div>
 </div>
 
-  </body>
+</body>
+
 </html>

@@ -67,26 +67,31 @@
 .socials {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-.socials-icon {
+.socail__icon {
     border-radius: 50%;
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 20px;
+    background-color: #F8D24E;
 
-    &:hover .socials-icon__link,
-    &:focus .socials-icon__link {
-        fill: #FCFCFC;
+    &:hover .socials__link,
+    &:focus .socials__link {
+        fill: #FCFCFC
     }
 }
 
-.socials-icon__link {
-    fill: #FCFCFC;
+.socials__link {
+    fill: #84A178;
+    display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 @media screen and (min-device-width: 768px),
