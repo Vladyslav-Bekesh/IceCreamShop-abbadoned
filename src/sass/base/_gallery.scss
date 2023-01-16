@@ -3,20 +3,19 @@
 	position: relative;
 	padding-top: 178px;
 	padding-bottom: 60px;
-	background-image: url('../images/gallery-reviews/Background_tablet.jpg');
 	background-position: -137px top;
-
+	background-image: url('../images/gallery-reviews/Background_tablet.jpg');
 
 	@media screen and (min-width: 480px) {
-		background-image: url('../images/gallery-reviews/Backgroud_mobile.jpg');
 		padding-top: 257px;
 		background-position: -282px -152px;
+		background-image: url('../images/gallery-reviews/Backgroud_mobile.jpg');
 	}
 
 	 @media screen and (min-width: 768px) {
-		background-image: url('../images/gallery-reviews/Background_tablet.jpg');
 		padding-top: 283px;
 		background-position: -37px -8px;
+		background-image: url('../images/gallery-reviews/Background_tablet.jpg');
 	 }
 
 	 @media screen and (min-width: 1200px) {
