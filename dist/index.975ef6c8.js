@@ -503,18 +503,33 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"8lqZg":[function(require,module,exports) {
-(()=>{
-    const refs = {
-        openModalBtn: document.querySelector("[data-modal-open]"),
-        closeModalBtn: document.querySelector("[data-modal-close]"),
-        modal: document.querySelector("[data-modal]")
-    };
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-    function toggleModal() {
-        refs.modal.classList.toggle("is-hidden");
+const swiperGalerry = new Swiper(".swiper-gallery", {
+    // Default parameters
+    slidesPerView: 1,
+    spaceBetween: 30,
+    direction: "horizontal",
+    loop: true,
+    speed: 1000,
+    // grabCursor: true,
+    autoplay: {
+        speed: 1200
     }
-})();
+});
+const swiperCustomerReviews = new Swiper(".swiper-reviews", {
+    // Default parameters
+    slidesPerView: 1,
+    spaceBetween: 100,
+    direction: "horizontal",
+    loop: true,
+    speed: 2000,
+    grabCursor: true,
+    autoplay: {
+        speed: 1500
+    },
+    pagination: {
+        el: ".swiper-pagination"
+    }
+});
 
 },{}]},["1RB6v","8lqZg"], "8lqZg", "parcelRequired7c6")
 
