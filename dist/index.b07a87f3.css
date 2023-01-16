@@ -259,6 +259,25 @@ body {
   color: #fff;
 }
 
+.logo {
+  width: 40px;
+  height: 37px;
+}
+
+@media screen and (min-width: 480px) {
+  .logo {
+    width: 48px;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    width: 60px;
+    height: 65px;
+  }
+}
+
 .contacts-grid {
   flex-direction: column;
   align-items: center;
@@ -858,7 +877,9 @@ body {
 
 .container--flex {
   padding-top: 12px;
+  padding-left: 20px;
   display: flex;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -870,6 +891,7 @@ body {
 @media screen and (min-width: 1200px) {
   .container--flex {
     padding-top: 8px;
+    padding-left: 32px;
   }
 }
 
