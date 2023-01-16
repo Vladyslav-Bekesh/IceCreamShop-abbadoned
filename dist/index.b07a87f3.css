@@ -290,11 +290,11 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
 }
 
-.socail__icon:hover .socials-icon__link, .socail__icon:focus .socials-icon__link {
+.socail__icon:hover .socials__link, .socail__icon:focus .socials__link {
   fill: #fcfcfc;
 }
 
-.socials-icon__link {
+.socials__link {
   fill: #84a178;
   justify-content: center;
   align-items: center;
