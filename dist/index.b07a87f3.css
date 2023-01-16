@@ -842,26 +842,32 @@ body {
 
 .gallery {
   background-image: url("Background_tablet.b81fea29.jpg");
-  background-position: 0 0;
+  background-position: -137px 0;
   padding-top: 178px;
+  padding-bottom: 60px;
   position: relative;
 }
 
 @media screen and (min-width: 480px) {
   .gallery {
+    background-image: url("Backgroud_mobile.e7e0c78a.jpg");
+    background-position: -282px -152px;
     padding-top: 257px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .gallery {
+    background-image: url("Background_tablet.b81fea29.jpg");
+    background-position: -37px -8px;
     padding-top: 283px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery {
-    background-image: url("Background_tablet.b81fea29.jpg");
+    background-image: url("Backgroud_desktop.dbe0c6ad.jpg");
+    background-position: -65px -238px;
     padding-top: 464px;
   }
 }
@@ -916,7 +922,7 @@ body {
   .gallery-box {
     width: 704px;
     border-radius: 18px;
-    top: 95px;
+    top: 16px;
   }
 }
 
@@ -926,7 +932,6 @@ body {
     border-radius: 24px;
     top: 126px;
     left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
 
@@ -960,11 +965,6 @@ body {
 .swiper {
   width: 600px;
   height: 300px;
-}
-
-.customer-reviews {
-  background-image: url("Background_tablet.b81fea29.jpg");
-  padding-bottom: 40px;
 }
 
 .reviews {
