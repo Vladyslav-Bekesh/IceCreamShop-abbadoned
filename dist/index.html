@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice Cream Shop</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="icon" type="image/ico" href="/favicon.335f1e99.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Seymour+One&display=swap" rel="stylesheet">
@@ -63,7 +64,7 @@
           This is enough to choose ice cream and coffee for any mood!
         </li>
       </ul>
-      <button type="button" class="pretty-button pretty-button--fill button--about" data-modal-open="">
+      <button type="button" class="pretty-button pretty-button--fill button--about" data-modal="how-its-made">
         Read more
         <svg width="12" height="12">
           <use href="/symbol-defs.a8b2e413.svg#about-arrow"></use>
@@ -127,7 +128,7 @@
       </section>
       <section class="section contacts">
   <div class="container">
-    <h2 class="visually-hidden">Contacts</h2>
+    <h2 class="is-hidden">Contacts</h2>
     <ul class="contacts-grid">
       <li class="contacts-grid__item">
         <p class="contacts__representation">CAFE</p>
@@ -146,10 +147,10 @@
           <span class="contacts__work-time--time">08:00 AM - 16:00 PM</span>
         </p>
         <p>
-          <a href="tel:+610383766284" target="_blank" class="contacts__link contacts__link--tel">
+          <a href="tel:+610383766284" class="contacts__link contacts__link--tel">
             +61(0) 383 766 284
           </a>
-          <a href="mailto:noreply@envato.com" target="_blank" class="contacts__link">
+          <a href="mailto:noreply@envato.com" class="contacts__link">
             noreply@envato.com
           </a>
         </p>
@@ -159,7 +160,7 @@
         <p class="contacts__representation">FOODTRUCK</p>
         <p class="contacts__adress">
           Los Angeles
-          <a href="https://goo.gl/maps/rqemDJqgC4AvsCtx7" class="contacts__adress-link" target="_blank" rel="noreferrer noopener">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
+          <a href="https://goo.gl/maps/rqemDJqgC4AvsCtx7" class="contacts__adress-link" rel="noreferrer noopener">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA
           </a>
         </p>
         <p class="contacts__work-time">
@@ -171,10 +172,10 @@
           <span class="contacts__work-time--time">08:00 AM - 16:00 PM</span>
         </p>
         <p>
-          <a href="tel:+610383766284" target="_blank" class="contacts__link contacts__link--tel" rel="noreferrer noopener">
+          <a href="tel:+610383766284" class="contacts__link contacts__link--tel" rel="noreferrer noopener">
             +61(0) 383 766 284
           </a>
-          <a href="mailto:noreply@envato.com" target="_blank" class="contacts__link">noreply@envato.com</a>
+          <a href="mailto:noreply@envato.com" class="contacts__link">noreply@envato.com</a>
         </p>
       </li>
 
@@ -182,7 +183,7 @@
         <p class="contacts__representation">CAFE</p>
         <p class="contacts__adress">
           New York
-          <a href="https://goo.gl/maps/734teSvqBzN2GKCG9" target="_blank" class="contacts__adress-link">726 Sterling Pl, Brooklyn, NY 11222, USA
+          <a href="https://goo.gl/maps/734teSvqBzN2GKCG9" class="contacts__adress-link">726 Sterling Pl, Brooklyn, NY 11222, USA
           </a>
         </p>
         <p class="contacts__work-time">
@@ -195,10 +196,10 @@
           <span class="contacts__work-time--time">08:00 AM - 16:00 PM</span>
         </p>
         <p>
-          <a href="tel:+610383766284" target="_blank" class="contacts__link contacts__link--tel">
+          <a href="tel:+610383766284" class="contacts__link contacts__link--tel">
             +61(0) 383 766 284
           </a>
-          <a href="mailto:noreply@envato.com" target="_blank" class="contacts__link">
+          <a href="mailto:noreply@envato.com" class="contacts__link">
             noreply@envato.com
           </a>
         </p>
@@ -286,7 +287,7 @@
     
 
     <div class="backdrop">
-  <div class="modal-how-its-made">
+  <div class="modal-how-its-made" data-modal="how-its-made">
     <button type="button" class="close-btn">
       <svg width="24" height="24">
         <use href="/symbol-defs.a8b2e413.svg#close"></use>
