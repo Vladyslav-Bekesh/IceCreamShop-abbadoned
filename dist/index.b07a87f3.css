@@ -1119,6 +1119,7 @@ is-hidden {
   min-width: 196px;
   cursor: pointer;
   outline: none;
+  margin: 0;
 }
 
 .pretty-button--contacts:focus {
