@@ -1,0 +1,33 @@
+<div class="backdrop is-hidden">
+  <div class="modal-location">
+    <button type="button" class="close-btn">
+      <svg width="24" height="24">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-location__title">Our Locations</p>
+    <div class="modal-location__wrapper">
+      <picture>
+        <source
+          srcset="./images/map-tab.jpg 1x, ./images/map-tab@2.jpg 2x"
+          media="(min-width: 768px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="./images/map-mob.jpg 1x, ./images/map-mob@2.jpg 2x"
+          media="(max-width: 767px)"
+          type="image/jpeg"
+        />
+
+        <img src="./images/map-mob.jpg" alt="map" />
+      </picture>
+    </div>
+    <a
+      href="https://goo.gl/maps/x8WFKUH9fPPbQqz98"
+      rel="noreferrer noopener"
+      target="_blank"
+      class="modal-location__link"
+      >Open map</a
+    >
+  </div>
+</div>
