@@ -156,16 +156,9 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 480px;
   margin: 0 auto;
-  padding: 0 auto;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-    padding: 0 20px;
-  }
+  padding: 0 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1694,14 +1687,8 @@ is-hidden {
 }
 
 .hero__box {
-  padding-top: 50px;
+  padding-top: 40px;
   position: relative;
-}
-
-@media screen and (min-width: 480px) {
-  .hero__box {
-    padding-top: 40px;
-  }
 }
 
 @media screen and (min-width: 768px) {
