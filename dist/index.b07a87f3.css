@@ -306,6 +306,27 @@ body {
   }
 }
 
+#myBtn {
+  z-index: 99;
+  background-color: var(--secondary-text-color);
+  border: none;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  padding: 15px;
+  font-size: 18px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
 .backdrop {
   width: 100%;
   height: 100%;
