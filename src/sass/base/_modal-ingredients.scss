@@ -290,9 +290,6 @@
     }
   }
 
-#bg-checkbox {
-    display: none;
-}
 
 #bg-checkbox-button {
     position: relative;
@@ -304,7 +301,7 @@
     border: 2px solid #9CBE8F;
     border-radius: 40px;
     cursor: pointer;
-    transition: 0.4s ease background-color;  
+    transition: background-color 500ms ease, border 500ms ease;  
 }
 
 @media screen and (min-width: 768px) {
@@ -336,6 +333,7 @@
     background-color: #9CBE8F;
     border: 2px solid #9CBE8F;
     border-radius: 50%;
+    transition: top 500ms ease, border 500ms ease, background-color 500ms ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -358,6 +356,7 @@
     line-height: 1.2;
     z-index: 1;
     bottom: 8px;
+    transition: top 500ms ease;
       
 }
 
@@ -368,10 +367,55 @@
   }
 }
 
-
-
 .check__boxes:not(:last-child) {
     margin-right: 9px;
 }
 
+#bg-checkbox, #bg-checkbox-2, #bg-checkbox-3, #bg-checkbox-4 {
+  display: none;
+}
+
+#bg-checkbox:checked + #bg-checkbox-button,
+#bg-checkbox-2:checked + #bg-checkbox-button,
+#bg-checkbox-3:checked + #bg-checkbox-button,
+#bg-checkbox-4:checked + #bg-checkbox-button {
+  border: 2px solid #F8D24E;
+}
+
+
+#bg-checkbox:checked + #bg-checkbox-button #knob,
+#bg-checkbox-2:checked + #bg-checkbox-button #knob,
+#bg-checkbox-3:checked + #bg-checkbox-button #knob,
+#bg-checkbox-4:checked + #bg-checkbox-button #knob {
+  top: 34px;
+  background-color: #F8D24E;
+  border: 2px solid #F8D24E;
+}
+
+#bg-checkbox:checked + #bg-checkbox-button #ok,
+#bg-checkbox-2:checked + #bg-checkbox-button #ok,
+#bg-checkbox-3:checked + #bg-checkbox-button #ok,
+#bg-checkbox-4:checked + #bg-checkbox-button #ok {
+  top: -44px;
+  
+}
+
+@media screen and (max-width: 767px) {
+  #bg-checkbox:checked + #bg-checkbox-button #knob,
+#bg-checkbox-2:checked + #bg-checkbox-button #knob,
+#bg-checkbox-3:checked + #bg-checkbox-button #knob,
+#bg-checkbox-4:checked + #bg-checkbox-button #knob {
+  top: 26px;
+  background-color: #F8D24E;
+  border: 2px solid #F8D24E;
+}
+
+#bg-checkbox:checked + #bg-checkbox-button #ok,
+#bg-checkbox-2:checked + #bg-checkbox-button #ok,
+#bg-checkbox-3:checked + #bg-checkbox-button #ok,
+#bg-checkbox-4:checked + #bg-checkbox-button #ok {
+  top: -34px;
+  
+}
+}
 
