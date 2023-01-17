@@ -507,8 +507,9 @@ var _mainJs = require("../src/js/main.js");
 
 },{"../src/js/main.js":"1SICI"}],"1SICI":[function(require,module,exports) {
 var _swiper = require("./swiper");
+var _modalJs = require("./modal.js");
 
-},{"./swiper":"rrgcw"}],"rrgcw":[function(require,module,exports) {
+},{"./swiper":"rrgcw","./modal.js":"aHHgN"}],"rrgcw":[function(require,module,exports) {
 const swiperGalerry = new Swiper(".swiper-gallery", {
     // Default parameters
     slidesPerView: 1,
@@ -536,6 +537,19 @@ const swiperCustomerReviews = new Swiper(".swiper-reviews", {
         el: ".swiper-pagination"
     }
 });
+
+},{}],"aHHgN":[function(require,module,exports) {
+const modalBtns = document.querySelectorAll("[data-modal-open], [data-modal-close]");
+modalBtns.forEach((btn)=>{
+    btn.addEventListener("click", (event)=>{
+        toggleModal(event);
+    });
+});
+function toggleModal(event) {
+    var dataValue = event.target.getAttribute("data-btn");
+    var modal = document.querySelector("[data-modal=" + dataValue + "]");
+    modal.classList.toggle("is-hidden");
+}
 
 },{}]},["1RB6v","8lqZg"], "8lqZg", "parcelRequired7c6")
 
