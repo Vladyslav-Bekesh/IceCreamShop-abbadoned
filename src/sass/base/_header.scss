@@ -49,6 +49,12 @@
 .icon-menu {
   fill: white;
 }
+.button-menu:hover .icon-menu,
+.button-menu:focus .icon-menu {
+  fill: var(--accent-color)
+}
+
+
 
 .header-button {
   height: 42px;
