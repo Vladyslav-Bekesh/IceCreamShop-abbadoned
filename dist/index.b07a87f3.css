@@ -1512,13 +1512,13 @@ is-hidden {
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  .container-header {
     padding-left: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .container-header {
     padding-right: 32px;
   }
 }
@@ -1568,6 +1568,10 @@ is-hidden {
 
 .icon-menu {
   fill: #fff;
+}
+
+.button-menu:hover .icon-menu, .button-menu:focus .icon-menu {
+  fill: var(--accent-color);
 }
 
 @media screen and (max-width: 767px) {
