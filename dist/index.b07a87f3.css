@@ -2945,6 +2945,7 @@ is-hidden {
 }
 
 .products {
+  z-index: -5;
   background-image: url("backgroud_mobile.7b47d734.jpg");
   background-size: cover;
 }
@@ -3053,7 +3054,7 @@ is-hidden {
 }
 
 .products__card {
-  width: 280px;
+  width: 250px;
   height: 428px;
   border-radius: 24px;
   flex-direction: column;
@@ -3061,6 +3062,7 @@ is-hidden {
   align-items: center;
   padding: 123px 25px 10px;
   display: flex;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -3095,6 +3097,16 @@ is-hidden {
   height: 200px;
   border-radius: 50%;
   margin-top: 7px;
+  position: absolute;
+  top: -110px;
+}
+
+@media screen and (min-width: 1200px) {
+  .products__wrap {
+    width: 320px;
+    height: 320px;
+    top: -183px;
+  }
 }
 
 .products__wrap.products__wrap--green {
@@ -3119,6 +3131,13 @@ is-hidden {
   border-radius: 50%;
   display: block;
   bottom: 7px;
+}
+
+@media screen and (min-width: 1200px) {
+  .products__icon {
+    width: 320px;
+    height: 320px;
+  }
 }
 
 .products-card__title {
