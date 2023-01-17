@@ -864,13 +864,13 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  .container-header {
     padding-left: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .container-header {
     padding-right: 32px;
   }
 }
