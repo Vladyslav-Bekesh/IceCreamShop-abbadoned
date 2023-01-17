@@ -1,5 +1,6 @@
 .products {
     background-size: cover;
+    z-index: -5;
     background-image: url(../images/products/backgroud_mobile.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -82,11 +83,12 @@
   }
   
   .products__card {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 280px;
+    width: 250px;
     height: 428px;
     padding-top: 123px;
     padding-right: 25px;
@@ -120,10 +122,17 @@
   }
 
   .products__wrap{
+    position: absolute;
+    top: -110px;
     margin-top: 7px;
     width: 200px;
     height: 200px;
     border-radius: 50%; 
+    @media screen and (min-width: 1200px) {
+     width: 320px;
+     height: 320px;
+     top: -183px;
+    }
     
 
     &.products__wrap--green{
@@ -141,13 +150,16 @@
    }
 
    .products__icon{
-    // position: relative;
     bottom: 7px;     
     display: block;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     z-index: 1;
+    @media screen and (min-width: 1200px) {
+      width: 320px;
+      height: 320px;
+     }
 }
 
    
