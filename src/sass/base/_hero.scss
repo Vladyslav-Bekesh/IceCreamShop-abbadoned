@@ -1,3 +1,9 @@
+  
+  
+  .container {
+    padding: 0;
+  }
+
   .hero__box {
     position: relative;
     padding-top: 50px;
@@ -31,12 +37,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #FCFCFC;
-    margin-left: 20px;
+    
   }
   
   @media screen and (min-width: 768px) {
     .hero__title {
-        margin-left: 32px;
+        
     }
   }
   
