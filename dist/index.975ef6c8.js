@@ -508,8 +508,9 @@ var _mainJs = require("../src/js/main.js");
 },{"../src/js/main.js":"1SICI"}],"1SICI":[function(require,module,exports) {
 var _swiper = require("./swiper");
 var _modalJs = require("./modal.js");
+var _modal = require("./modal");
 
-},{"./swiper":"rrgcw","./modal.js":"aHHgN"}],"rrgcw":[function(require,module,exports) {
+},{"./swiper":"rrgcw","./modal.js":"aHHgN","./modal":"aHHgN"}],"rrgcw":[function(require,module,exports) {
 const swiperGalerry = new Swiper(".swiper-gallery", {
     // Default parameters
     slidesPerView: 1,
@@ -545,10 +546,16 @@ modalBtns.forEach((btn)=>{
         toggleModal(event);
     });
 });
+const modalBtns = document.querySelectorAll("[data-modal-open], [data-modal-close]");
+modalBtns.forEach((btn)=>{
+    btn.addEventListener("click", (event)=>{
+        toggleModal(event);
+    });
+});
 function toggleModal(event) {
     var dataValue = event.target.getAttribute("data-btn");
-    var modal = document.querySelector("[data-modal=" + dataValue + "]");
-    modal.classList.toggle("is-hidden");
+    console.log(event.target.getAttribute("class"));
+    console.log(dataValue);
 }
 
 },{}]},["1RB6v","8lqZg"], "8lqZg", "parcelRequired7c6")

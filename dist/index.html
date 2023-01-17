@@ -49,7 +49,7 @@
 	</div>
 </header>
     <main>
-      <section class="">
+      <section class="background-color">
   <div class="container">
     <div class="hero__box">
     
@@ -58,7 +58,7 @@
   
       <ul class="hero__process">
         <li class="hero__products"><a href="#" class="hero__link" data-modal-open="">Products</a></li>
-        <li class="hero__how"><a href="#" class="hero__link">How it’s ma?</a></li>
+        <li class="hero__how"><a href="#" class="hero__link">How it’s made?</a></li>
       </ul>
       
       
@@ -113,7 +113,70 @@
 </section>
       <section class="products section">
   <div class="container">
+      <p class="products__pretitle">100% natural</p>
+      <h2 class="products__title">products</h2>
+      <ul class="products__list">
+          <li class="products__card products__card--ice-cream">
+            <div class="products__wrap products__wrap--green">
+              <picture>
+                <source srcset="/kelsey-curtis-prod-desk.967279b7.jpg 1x, /kelsey-curtis-prod-desk-2x.e4afa9b5.jpg 2x" media="(min-width:1200px)">
+                <source srcset="/kelsey-curtis-prod-tab.1572c1b1.jpg 1x, /kelsey-curtis-prod-tab-2x.82fc7f74.jpg 2x" media="(min-width:768px)">
+                <source srcset="/kelsey-curtis-prod-mob.bbc1c76b.jpg 1x, /kelsey-curtis-prod-mob-2x.86fdd1a6.jpg 2x" media="(min-width:480px)">
+                <img src="/kelsey-curtis-prod-mob.bbc1c76b.jpg" class="products__icon" alt="морозиво">
+              </picture>
+            </div>
+              <h3 class="products-card__title">ice cream</h3>
+              <p class="products-card__text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and
+                  natural stabilizer
+              </p>
+              <button type="button" class="product-button" data-modal="modal-buy-now">
+                  <svg class="product-card__icon" width="40" height="16" data-modal-open="" data-btn="modalIngredients">
+                      <use href="/symbol-defs.a8b2e413.svg#Arrow"></use>
+                  </svg>
+              </button>
+          </li>
+          <li class="products__card products__card--ice-coffee">
+            <div class="products__wrap products__wrap--yellow">
+              <picture>
+                <source srcset="/pariwat-pannium-prod-desk.4e359936.jpg 1x, /pariwat-pannium-prod-desk-2x.a2dafe0a.jpg 2x" media="(min-width:1200px)">
+                <source srcset="/pariwat-pannium-prod-tab.015a3309.jpg 1x, /pariwat-pannium-prod-tab-2x.38fa37a6.jpg 2x" media="(min-width:768px)">
+                <source srcset="/pariwat-pannium-prod-mob.e62a51ed.jpg 1x, /pariwat-pannium-prod-mob-2x.baa1462c.jpg 2x" media="(min-width:480px)">
+                <img src="/pariwat-pannium-prod-mob.e62a51ed.jpg" class="products__icon" alt="морозиво">
+              </picture>
+            </div>
+              <h3 class="products-card__title">ice coffee</h3>
+              <p class="products-card__text">Fragrant  binvigorating drink created from 100% natural ingredients without
+                  the use of preservatives and flavor enhancers
 
+              </p>
+              <button type="button" class="product-button">
+                  <svg width="40" height="16" class="product-card__icon" data-modal-open="" data-btn="modalIngredients">
+                      <use href="/symbol-defs.a8b2e413.svg#Arrow"></use>
+                  </svg>
+              </button>
+          </li>
+          <li class="products__card products__card--milkshakes">
+            <div class="products__wrap products__wrap--brown">
+              <picture>
+                <source srcset="/victor-rutka-prod-desk.31cf88b6.jpg 1x, /victor-rutka-prod-desk-2x.899a24ae.jpg 2x" media="(min-width:1200px)">
+                <source srcset="/victor-rutka-prod-tab.dd18d83e.jpg 1x, /victor-rutka-prod-tab-2x.54181f60.jpg 2x" media="(min-width:768px)">
+                <source srcset="/victor-rutka-prod-mob.12c377b2.jpg 1x, /victor-rutka-prod-mob-2x.fb43b839.jpg 2x" media="(min-width:480px)">
+                
+                <img src="/victor-rutka-prod-mob.12c377b2.jpg" class="products__icon" alt="морозиво">
+              </picture>
+            </div>
+              <h3 class="products-card__title">milkshakes</h3>
+              <p class="products-card__text">Sweet drinks based on milk and ice cream, supplemented with syrups,
+                  fruits, berries and other sweets of your choice
+
+              </p>
+              <button type="button" class="product-button">
+                  <svg class="product-card__icon" width="40" height="16" data-modal-open="" data-btn="modalIngredients">
+                      <use href="/symbol-defs.a8b2e413.svg#Arrow"></use>
+                  </svg>
+              </button>
+          </li>
+      </ul>
   </div>
 </section>
       <section class="section">
@@ -558,12 +621,12 @@
 
 	</div>
 </div>
-	<div class="backdrop is-hidden" data-modal="">
+	<div class="backdrop is-hidden" data-modal="modalIngredients">
     <div class="modal__ingredients">
   
       <form class="ingredients__form">
         
-        <p class="ingredients__title">Chololate icecream</p>
+        <p class="ingredients__title">te icecream</p>
   
           <div class="chocolate">
           <picture>
@@ -667,8 +730,8 @@
       </form>
   
   
-      <button type="button" class="ingredients__close" data-modal-close="">
-        <svg class="ingredients__btn" width="18px" height="18px">
+      <button type="button" class="ingredients__close">
+        <svg class="ingredients__btn" width="18px" height="18px" data-modal-close="" data-btn="modalIngredients">
           <use href="/symbol-defs.a8b2e413.svg#close" class="ingredients__img"></use>
         </svg>
       </button>
