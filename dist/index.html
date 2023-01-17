@@ -19,11 +19,35 @@
 	<!-- ❗️❗️❗️ Add partials like so for every page -->
 
     <!-- ELEMENTS -->
-    <header class="header">
-  <div class="container">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, quibusdam quia qui consequatur sunt vero perferendis tenetur blanditiis alias? Repudiandae labore officiis accusantium dolor dolorum molestiae exercitationem explicabo repellat eaque.</p>
+    <header class="header background-color">
+  <div class="container container--flex">
+    <picture>
+      <source srcset="/Logo.78101b20.png 1x, /logo-desktop-2x.a96bcf90.png 2x" media="(min-width:1200px)">
+      <source srcset="/logo-tablet-1x.5ed11995.png 1x, /logo-tablet-2x.0e2af356.png 2x" media="(min-width:480px)">
+      <source srcset="/logo-mob-1x.fee6ad83.png 1x, /logo-mob-2x.f91c5489.png 2x">
+      <img class="logo" srcset="/logo-desktop-2x.a96bcf90.png 2x" src="/Logo.78101b20.png" alt="Лого компанії" width="60">
+    </picture>
+    <button class="button-menu" type="button">
+      <svg class="icon-menu" width="32" height="32">
+        <use href="/symbol-defs.a8b2e413.svg#menu-button"></use>
+      </svg>
+    </button>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="navigation__link" href="">Home</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="">How it’s made?</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="">Our products</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container--padding">
+      <button class="pretty-button pretty-button--fill header-button" type="button">
+        Buy now<span>&gt;</span>
+      </button>
+    </div>
   </div>
 </header>
+
     <main>
       <section class="">
   <div class="container">
