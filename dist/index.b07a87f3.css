@@ -1719,6 +1719,10 @@ is-hidden {
   }
 }
 
+.container {
+  padding: 0;
+}
+
 .hero__box {
   padding-top: 50px;
   position: relative;
@@ -1746,18 +1750,11 @@ is-hidden {
   letter-spacing: .04em;
   text-transform: uppercase;
   color: #fcfcfc;
-  margin-left: 20px;
   font-family: Seymour One;
   font-size: 26px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.27;
-}
-
-@media screen and (min-width: 768px) {
-  .hero__title {
-    margin-left: 32px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
